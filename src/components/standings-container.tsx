@@ -9,16 +9,19 @@ import { SERIES_IDS } from '../utils/constants';
 export const StandingsContainer = () => {
 
   const [serialID, setSerialID] = useState(5612);
+  const [shouldFetch, setShouldFetch] = useState(false); 
 
-  // const { data: standings } = useQuery({
-  //     queryKey: ['standings', serialID],
-  //     queryFn: () => fetchStandingsData(serialID),
-  //     // enabled: !!serialID, 
-  // });
+
+  const { data: standings } = useQuery({
+      queryKey: ['standings', serialID],
+      queryFn: () => fetchStandingsData(serialID),
+      enabled: shouldFetch && serialID !== null,
+  });
 
   const handleSelectChange = (newSerialID: number) => {
     if (newSerialID !== serialID) {
       setSerialID(newSerialID); 
+      setShouldFetch(true);
     }
   };
   return (
@@ -27,7 +30,7 @@ export const StandingsContainer = () => {
         options={SERIES_IDS}
         onSelect={handleSelectChange}
       />
-      {/* <Standings standings={standings} /> */}
+      <Standings standings={standings} />
     </div>
   )
 }
