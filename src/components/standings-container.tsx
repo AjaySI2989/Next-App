@@ -10,10 +10,10 @@ export const StandingsContainer = () => {
 
   const [serialID, setSerialID] = useState(5612);
 
-  const { data: standings, refetch } = useQuery({
+  const { data: standings } = useQuery({
       queryKey: ['standings', serialID],
       queryFn: () => fetchStandingsData(serialID),
-      enabled: !!serialID, 
+      // enabled: !!serialID, 
   });
 
   const handleSelectChange = (newSerialID: number) => {
