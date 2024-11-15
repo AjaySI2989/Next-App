@@ -10,11 +10,11 @@ export const StandingsContainer = () => {
 
   const [serialID, setSerialID] = useState(5612);
 
-  const { data: standings } = useQuery({
-      queryKey: ['standings', serialID],
-      queryFn: () => fetchStandingsData(serialID),
-      // enabled: !!serialID, 
-  });
+  // const { data: standings } = useQuery({
+  //     queryKey: ['standings', serialID],
+  //     queryFn: () => fetchStandingsData(serialID),
+  //     // enabled: !!serialID, 
+  // });
 
   const handleSelectChange = (newSerialID: number) => {
     if (newSerialID !== serialID) {
@@ -27,7 +27,7 @@ export const StandingsContainer = () => {
         options={SERIES_IDS}
         onSelect={handleSelectChange}
       />
-      <Standings standings={standings} />
+      {/* <Standings standings={standings} /> */}
     </div>
   )
 }
