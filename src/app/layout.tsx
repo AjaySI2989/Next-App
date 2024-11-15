@@ -1,4 +1,5 @@
-import './global.css';
+import './global.scss';
+import Providers from './providers';
 
 export const metadata = {
   title: 'Welcome to next-app',
@@ -12,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>
+        {children}
+        </Providers>
+        </body>
     </html>
   );
 }

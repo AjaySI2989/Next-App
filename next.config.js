@@ -12,6 +12,13 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  images:{
+    remotePatterns : [
+      {
+        hostname : 'assets-icc.sportz.io'
+      }
+    ]
+  }
 };
 
 const plugins = [

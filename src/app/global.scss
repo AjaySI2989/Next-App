@@ -1,0 +1,6120 @@
+:root {
+  --pure-white: hsl(0 0% 100%);
+  --hsl-pure-white: 0 0% 100%;
+  --pure-black: hsl(0 0% 0%);
+  --hsl-pure-black: 0 0% 0%;
+  --primary: hsl(225 100% 19%);
+  --hsl-primary: 225 100% 19%;
+  --primary-one: hsl(321 100% 50%);
+  --hsl-primary-one: 321 100% 50%;
+  --secondary: hsl(223 100% 24%);
+  --hsl-secondary: 223 100% 24%;
+  --dark-grey: hsl(206 16% 38%);
+  --hsl-dark-grey: 206 16% 38%;
+  --dark-grey-one: hsl(206 11% 58%);
+  --hsl-dark-grey-one: 206 11% 58%;
+  --light-grey: hsl(207 14% 88%);
+  --hsl-light-grey: 207 14% 88%;
+  --t-twenty: hsl(304 96% 51%);
+  --hsl-t-twenty: 304 96% 51%;
+  --odi: hsl(178 76% 46%);
+  --hsl-odi: 178 76% 46%;
+  --test-light: hsl(137 71% 49%);
+  --hsl-test-light: 137 71% 49%;
+  --test-dark: hsl(168 100% 22%);
+  --hsl-test-dark: 168 100% 22%;
+  --highlight-red: hsl(0 100% 41%);
+  --hsl-highlight-red: 0 100% 41%;
+  --highlight-success: hsl(112 100% 41%);
+  --hsl-highlight-success: 112 100% 41%;
+  --grey-one: hsl(0 0% 97%);
+  --hsl-grey-one: 0 0% 97%;
+  --team-a: hsl(0 100% 43%);
+  --hsl-team-a: 0 100% 43%;
+  --team-b: hsl(145 94% 13%);
+  --hsl-team-b: 145 94% 13%;
+  --shimmer-light-color: hsl(0 0% 87%);
+  --hsl-shimmer-light-color: 0 0% 87%;
+  --shimmer-dark-color: hsl(0 0% 67%);
+  --hsl-shimmer-dark-color: 0 0% 67%;
+  --commentry-wicket: hsl(341 100% 39%);
+  --hsl-commentry-wicket: 341 100% 39%;
+  --medium-blue: hsl(203 92% 39%);
+  --hsl-medium-blue: 203 92% 39%;
+  --deep-violet: hsl(266 100% 23%);
+  --hsl-deep-violet: 266 100% 23%;
+  --frostbite: hsl(324 81% 57%);
+  --hsl-frostbite: 324 81% 57%;
+  --platinum: hsl(0 0% 90%);
+  --hsl-platinum: 0 0% 90%;
+  --wicket: hsl(341 100% 39%);
+  --hsl-wicket: 341 100% 39%;
+  --four: hsl(188 95% 53%);
+  --hsl-four: 188 95% 53%;
+  --six: hsl(137 71% 49%);
+  --hsl-six: 137 71% 49%;
+  --vh: 1vh;
+  --vw: 1vw;
+  --window-inner-height: calc(var(--vh, 1vh) * 100);
+  --window-inner-width: calc(var(--vw, 1vw) * 100);
+  --color-grey: hsl(0, 0%, 88%);
+  --color-black: hsl(0, 0%, 0%);
+  --shimmer-light-color: hsl(0, 0%, 87%);
+  --shimmer-dark-color: hsl(0, 0%, 67%);
+  --space-1: 4px;
+  --space-1-neg: -4px;
+  --space-2: 8px;
+  --space-2-neg: -8px;
+  --space-3: 12px;
+  --space-3-neg: -12px;
+  --space-4: 16px;
+  --space-4-neg: -16px;
+  --space-5: 20px;
+  --space-5-neg: -20px;
+  --space-6: 24px;
+  --space-6-neg: -24px;
+  --space-7: 28px;
+  --space-7-neg: -28px;
+  --space-8: 32px;
+  --space-8-neg: -32px;
+  --space-9: 36px;
+  --space-9-neg: -36px;
+  --space-10: 40px;
+  --space-10-neg: -40px;
+  --space-11: 44px;
+  --space-11-neg: -44px;
+  --space-12: 48px;
+  --space-12-neg: -48px;
+  --space-0: 0;
+  --full-radius: 10px;
+  --half-radius: calc(var(--full-radius) / 2);
+  --zindex-swiper-button: 1;
+  --zindex-filter: 1;
+  --zindex-pattern: -1;
+  --zindex-button: 1;
+  --zindex-graph-tootltip: 1;
+  --zindex-dropdown: 1;
+  --zindex-graph-line: -1;
+  --zindex-filter-stats: 3;
+  --zindex-box-shadow: 1;
+  --zindex-compare-player: 1;
+  --zindex-compare-player-filter: 50;
+  --zindex-btn-play: 1;
+  --zindex-rankings-table: 49
+}
+
+@font-face {
+  font-family: CWC;
+  src: local("CWC-Light"),url("/static-assets/buildv3/fonts/CWC-Light?v=60721358#iefix") format("embedded-opentype"),url("/static-assets/buildv3/fonts/CWC-Light.woff2?v=60721358") format("woff2"),url("/static-assets/buildv3/fonts/CWC-Light.woff?v=60721358") format("woff"),url("/static-assets/buildv3/fonts/CWC-Light.ttf?v=60721358") format("truetype"),url("/static-assets/buildv3/fonts/CWC-Light.svg#?v=60721358CWC") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: CWC;
+  src: local("CWC-Regular"),url("/static-assets/buildv3/fonts/CWC-Regular?v=60721358#iefix") format("embedded-opentype"),url("/static-assets/buildv3/fonts/CWC-Regular.woff2?v=60721358") format("woff2"),url("/static-assets/buildv3/fonts/CWC-Regular.woff?v=60721358") format("woff"),url("/static-assets/buildv3/fonts/CWC-Regular.ttf?v=60721358") format("truetype"),url("/static-assets/buildv3/fonts/CWC-Regular.svg#?v=60721358CWC") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: CWC;
+  src: local("CWC-Medium"),url("/static-assets/buildv3/fonts/CWC-Medium?v=60721358#iefix") format("embedded-opentype"),url("/static-assets/buildv3/fonts/CWC-Medium.woff2?v=60721358") format("woff2"),url("/static-assets/buildv3/fonts/CWC-Medium.woff?v=60721358") format("woff"),url("/static-assets/buildv3/fonts/CWC-Medium.ttf?v=60721358") format("truetype"),url("/static-assets/buildv3/fonts/CWC-Medium.svg#?v=60721358CWC") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: CWC;
+  src: local("CWC-Bold"),url("/static-assets/buildv3/fonts/CWC-Bold?v=60721358#iefix") format("embedded-opentype"),url("/static-assets/buildv3/fonts/CWC-Bold.woff2?v=60721358") format("woff2"),url("/static-assets/buildv3/fonts/CWC-Bold.woff?v=60721358") format("woff"),url("/static-assets/buildv3/fonts/CWC-Bold.ttf?v=60721358") format("truetype"),url("/static-assets/buildv3/fonts/CWC-Bold.svg#?v=60721358CWC") format("svg");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: "waf-font-icon";
+  src: url("/static-assets/buildv3/fonts/waf-font-icon.eot?v=60721358");
+  src: url("/static-assets/buildv3/fonts/waf-font-icon.eot?v=60721358#iefix") format("embedded-opentype"),url("/static-assets/buildv3/fonts/waf-font-icon.woff2?v=60721358") format("woff2"),url("/static-assets/buildv3/fonts/waf-font-icon.woff?v=60721358") format("woff"),url("/static-assets/buildv3/fonts/waf-font-icon.ttf?v=60721358") format("truetype"),url("/static-assets/buildv3/fonts/waf-font-icon.svg?v=60721358#waf-font-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap
+}
+
+.si-player-comparison .si-player-thumbnail .si-btn-add .si-btn-text,.si-player-comparison .si-find-player .si-head .si-btn-close .si-btn-text,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search,.si-player-comparison .si-toggle .si-switch {
+  font-size: 0
+}
+
+.si-player-ranking-list.si-theme .si-number::after,.si-player-ranking-detail.si-theme .si-card-content:not(:last-child)::after,.si-player-ranking-form.si-theme .si-card-item:not(:last-child)::after {
+  background-color: hsl(var(--hsl-pure-white)/0.2)
+}
+
+.si-scorestrip-widget.si-theme .swiper-pagination-bullet {
+  background-color: hsl(var(--hsl-pure-white)/0.4)
+}
+
+.si-ranking-predictor .si-table-info-text,.si-ranking-predictor .si-table-info-text:after,.si-player-comparison .si-player-thumbnail .si-btn-add::before,.si-player-comparison .si-player-content .si-select-player-title .si-title,.si-player-comparison .si-player-name .si-name,.si-player-comparison .si-player-personal-info .si-number,.si-player-comparison .si-player .si-team-name,.si-player-comparison .si-find-player .si-filter .si-btn-link .si-btn-text,.si-player-comparison .si-find-player .si-filter .si-btn-link::after,.si-player-comparison .si-find-player .si-footer .si-btn-add:before,.si-tournament-detail .si-no-data-text,.si-tournament-detail .si-no-data-text .si-text,.si-standings-page .si-data,.si-player-ranking-graph .si-no-data-wrap .si-text,.si-player-ranking-form .si-no-data-wrap .si-text,.si-player-ranking-list.si-theme .si-text,.si-player-ranking-list.si-theme .si-title,.si-player-ranking-list.si-theme .si-number,.si-player-ranking-detail.si-theme .si-card-title,.si-player-ranking-detail.si-theme .si-label,.si-player-ranking-detail.si-theme .si-number,.si-player-ranking-detail.si-theme .si-text,.si-player-ranking-detail.si-theme .si-social-share .si-icon-b-share,.si-player-ranking-graph.si-theme .si-card-title,.si-player-ranking-graph.si-theme .si-social-share .si-icon-b-share,.si-player-ranking-form.si-theme .si-card-title,.si-player-ranking-form.si-theme .si-text.si-team,.si-player-ranking-form.si-theme .si-text.si-number,.si-player-ranking-form.si-theme .si-text.si-name,.si-player-ranking-form.si-theme .si-social-share .si-icon-b-share,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link:after,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link .si-btn-text,.si-fixtures .si-tab-card-section .si-title,.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-no-data-wrap .si-text,.si-scorestrip-widget.si-theme .si-title,.si-scorestrip-widget.si-theme .si-social-share .si-icon-b-share::before,.si-stat-filter .si-btn-stat .si-btn-text,.si-stat-filter .si-btn-stat .si-btn-text:before,.si-stat-filter .si-filter-wrap .si-list-item.si-item-active .si-text,.si-social-share .si-icon-b-close::before,.si-social-icon::before,.si-tabs.si-primary-tab .si-tab-name.si-active .si-name,.si-tabs.si-primary-tab .si-tab-name.si-active .si-text,.si-tabs.si-secondary-tabs .si-tab-name.si-active .si-name {
+  color: var(--pure-white)
+}
+
+.si-ranking-predictor .si-score-btn,.si-ranking-predictor .si-btn-section .si-btn-site,.si-ranking-predictor .si-table-footer .si-btn-site,.si-ranking-predictor .si-table-head,.si-ranking-predictor .si-table-body .si-table-row,.si-player-comparison .si-player-select .si-player-btn,.si-player-comparison .si-find-player,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input,.si-player-comparison .si-toggle .si-switch:after,.si-tournament-detail .si-table-body .si-table-row:nth-child(odd) .si-table-data,.si-standings-page.si-integrated-widget,.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar-thumb,.si-player-ranking-list .si-card-item,.si-player-ranking-detail .si-card-item,.si-player-ranking-graph .si-card,.si-player-ranking-form .si-card,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link.si-btn-reset,.si-raking-detail .si-table-footer .si-btn-site,.si-scorestrip,.si-scorestrip-widget.si-theme .swiper-pagination-bullet-active,.si-filter-section .si-select-box-wrap,.si-filter-section .si-select-box-wrap::before,.si-stat-filter .si-filter-wrap {
+  background-color: var(--pure-white)
+}
+
+.si-tournament-detail .si-table-body .si-table-data:after,.si-player-ranking-list .si-tabs:before,.si-player-ranking-list .si-number:after,.si-fixtures .si-card-body::after,.si-fixtures .si-team:not(:nth-of-type(2))::after {
+  background-color: hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box:after {
+  background-color: hsl(var(--hsl-pure-black)/0.2)
+}
+
+.si-player-comparison .si-find-player.si-active::before {
+  background-color: hsl(var(--hsl-pure-black)/0.4)
+}
+
+.si-standings-page .si-standing-points .si-standing-points-title,.si-standings-page .si-standing-points .si-standing-points-list .si-text,.si-fixtures .si-card-item.upcoming .si-card-label,.si-fixtures .si-team-name .si-name,.si-fixtures .si-team-score,.si-scorestrip .si-match-status em,.si-scorestrip .si-team-wrapper .si-card-label,.si-scorestrip .si-match-details .si-text,.si-scorestrip .si-date,.si-scorestrip .si-name,.si-scorestrip .si-team-score,.si-scorestrip .si-team-extra,body {
+  color: var(--pure-black)
+}
+
+.flatpickr-calendar .si-event-date {
+  background-color: var(--pure-black)
+}
+
+.si-scorestrip .swiper-pagination-bullet {
+  background-color: hsl(var(--hsl-primary)/0.4)
+}
+
+.si-tournament-detail .si-table-right .si-table-body .si-table-data .si-text {
+  color: hsl(var(--hsl-primary)/0.6)
+}
+
+.si-ranking-predictor .si-head .si-title,.si-ranking-predictor .si-predictor-count-value,.si-ranking-predictor .si-team-name .si-text,.si-ranking-predictor .si-score,.si-ranking-predictor .si-score-btn .si-text::after,.si-ranking-predictor .si-btn-section .si-btn-site:after,.si-ranking-predictor .si-btn-section .si-btn-text,.si-ranking-predictor .si-table-footer .si-btn-text,.si-ranking-predictor .si-table-footer .si-btn-site:after,.si-ranking-predictor .si-table-data .si-text,.si-player-comparison .si-player-select .si-player-btn:after,.si-player-comparison .si-player-select .si-btn-text,.si-player-comparison .si-card-title,.si-player-comparison .si-card-item .si-number,.si-player-comparison .si-find-player .si-head .si-title,.si-player-comparison .si-find-player .si-head .si-btn-close::after,.si-player-comparison .si-find-player .si-filter .si-label .si-text,.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-player-comparison .si-find-player .si-filter .si-selected-title:after,.si-player-comparison .si-find-player .si-filter .si-sub-title,.si-player-comparison .si-find-player .si-filter .si-title,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input,.si-player-comparison .si-find-player .si-player-name .si-text,.si-player-comparison .si-find-player .si-player-role .si-text,.si-player-comparison .si-find-player .si-footer .si-footer-title,.si-tournament-detail .si-table-left .si-table-body .si-table-data .si-text,.si-tournament-detail .si-team .si-player-name .si-text,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-text,.si-tournament-team-detail .si-table-right .si-table-body .si-table-data .si-text,.si-tournament-team-detail .si-team .si-name,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-text,.si-tournament-stat-detail .si-team .si-team-name .si-fname,.si-tournament-stat-detail .si-team .si-team-name .si-sname,.si-tournament-stat .si-card-title,.si-tournament-records .si-card-title,.si-tournament-stat .si-table-data .si-text,.si-tournament-records .si-table-data .si-text,.si-tournament-stat .si-table-data .si-player-name .si-name,.si-tournament-stat .si-table-data .si-player-name .si-country,.si-tournament-records .si-table-data .si-player-name .si-name,.si-tournament-records .si-table-data .si-player-name .si-country,.si-tournament-stat .si-table-title,.si-tournament-records .si-table-title,.si-tournament-records .si-table-row:first-child .si-number,.si-standings-page .si-title,.si-standings-page .si-tab-name.si-active .si-tab-text,.si-standings-page .si-table-body .si-data,.si-standings-page .si-loadmore,.si-player-ranking-list .si-title,.si-player-ranking-list .si-number,.si-player-ranking-detail .si-card-title,.si-player-ranking-detail .si-label,.si-player-ranking-detail .si-number,.si-player-ranking-form .si-text.si-team,.si-player-ranking-form .si-text.si-number,.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title,.si-raking-detail .si-head .si-title,.si-raking-detail .si-filter-section .si-filter-wrap .si-selected-title .si-sub-title,.si-raking-detail .si-filter-section .si-filter-wrap .si-selected-title::after,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link.si-btn-reset .si-btn-text,.si-raking-detail .si-filter-section .si-filter-title,.si-raking-detail .si-table-footer .si-btn-text,.si-raking-detail .si-table-footer .si-btn-site:after,.si-raking-detail .si-table-data .si-text,.si-fixtures .si-title,.si-fixtures .si-card-item .si-btn-text,.si-standings .si-head .si-title,.si-standings .si-table-footer .si-btn-site:after,.si-standings .si-table-footer .si-text,.si-standings .si-table-data .si-text,.si-standings .si-table-data .si-player-name .si-name,.si-standings .si-table-data .si-player-name .si-country,.si-standings .si-table-title,.si-scorestrip .si-title,.si-scorestrip .si-card-footer .si-btn-site,.si-scorestrip .si-load-more,.si-fp-today,.si-fp-today::after,.si-tabs .si-tab-name.si-active .si-tab-text,.si-tabs.si-primary-tab .si-tab-name .si-name,.si-tabs.si-primary-tab .si-tab-name .si-text {
+  color: var(--primary)
+}
+
+.si-ranking-predictor .si-score-btn.si-minus .si-text::after,.si-ranking-predictor .si-rankings-table-wrapper,.si-player-comparison .si-player,.si-player-comparison .si-find-player .si-filter .si-btn-link,.si-player-comparison .si-find-player .si-footer .si-btn-add:before,.si-tournament-detail .si-no-data-text,.si-standings-page .si-table-head,.si-player-ranking-graph .si-no-data-wrap .si-text,.si-player-ranking-form .si-no-data-wrap .si-text,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link,.si-fixtures .si-tab-card-section .si-title,.si-fixtures .si-no-data-wrap .si-text,.si-standings .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-scorestrip .swiper-pagination-bullet-active,.si-scorestrip.si-theme,.si-social-wrap .si-close,.si-tabs .si-tab-name.si-active .si-tab-anchor::before,.si-tabs.si-primary-tab .si-tab-name.si-active,.si-tabs.si-secondary-tabs .si-tab-name.si-active {
+  background-color: var(--primary)
+}
+
+.si-stat-filter {
+  background-color: hsl(var(--hsl-secondary)/0.9)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title::after,.si-tournament-stat .si-table-footer .si-btn-site,.si-tournament-records .si-table-footer .si-btn-site,.si-tournament-stat .si-table-footer .si-text,.si-tournament-records .si-table-footer .si-text,.si-stat-filter .si-filter-wrap .si-sub-title,.si-stat-filter .si-filter-wrap .si-title,.si-stat-filter .si-filter-wrap .si-count.si-count {
+  color: var(--secondary)
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-tournament-records .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-stat-filter .si-filter-wrap .si-list-item.si-item-active {
+  background-color: var(--secondary)
+}
+
+.si-ranking-predictor .si-table-data.si-pos::after,.si-ranking-predictor .si-table-body .si-table-row:after,.si-tournament-detail .si-table-left .si-table-body .si-table-data.si-pos::before,.si-tournament-stat .si-table-row:after,.si-tournament-records .si-table-row:after,.si-tournament-stat .si-table-data.si-pos::after,.si-tournament-records .si-table-data.si-pos::after,.si-raking-detail .si-table-data.si-pos::after,.si-raking-detail .si-table-body .si-table-row:after,.si-standings .si-table-row:after,.si-standings .si-table-data.si-pos::after {
+  background-color: hsl(var(--hsl-dark-grey)/0.2)
+}
+
+.si-social-share .si-icon-b-share {
+  color: hsl(var(--hsl-dark-grey)/0.5)
+}
+
+.si-ranking-predictor .si-table-data .si-range.neutral,.si-raking-detail .si-table-data .si-range.neutral,.si-standings .si-table-data .si-range.neutral {
+  background-color: hsl(var(--hsl-dark-grey)/0.5)
+}
+
+.si-ranking-predictor .si-head .si-desc,.si-ranking-predictor .si-predictor-head,.si-ranking-predictor .si-predictor-result,.si-ranking-predictor .si-table-head .si-table-data .si-text,.si-player-comparison .si-card-item .si-number .si-text,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search:before,.si-standings-page .si-tab-text,.si-standings-page.si-integrated-widget .si-tab-text,.si-player-ranking-list .si-text,.si-player-ranking-detail .si-text,.si-player-ranking-form .si-text,.si-raking-detail .si-head .si-desc,.si-raking-detail .si-table-head .si-table-data .si-text,.si-fixtures .si-card-venue,.si-fixtures .si-card-date,.si-fixtures .si-card-match-info,.si-fixtures .si-card-result,.si-fixtures .si-team-score.si-test,.si-fixtures .si-searchbar .btn-search::after,.si-scorestrip .si-card-text,.si-scorestrip .si-matchinfo,.si-filter-section .si-selected-title::after,.si-filter-section .si-list-item,.si-filter-section .si-date-range label,.si-filter-section .si-sub-title,.si-filter-section .si-btn-text,.si-filter-section .add-cal__text,.si-filter-section .si-btn-calendar::after,.si-filter-section .add-cal::after,.si-stat-filter .si-filter-wrap .si-list-item .si-text,.si-tabs .si-tab-text,.si-tabs.si-secondary-tabs .si-tab-name .si-name {
+  color: var(--dark-grey)
+}
+
+.si-player-comparison .si-card-item .si-label,.si-player-comparison .si-toggle .si-switch .si-text::after,.si-player-comparison .si-toggle .si-switch .si-text::before,.si-player-comparison .si-toggle .si-check:checked+.si-switch .si-text::before {
+  color: var(--dark-grey-one)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title {
+  background-color: hsl(var(--hsl-light-grey)/0.3)
+}
+
+.si-ranking-predictor .si-rankings-table-section .si-desc,.si-player-comparison .si-player-personal-info .si-label,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search::placeholder,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input::placeholder,.si-player-ranking-list.si-theme .si-text,.si-player-ranking-form.si-theme .si-text.si-date,.si-player-ranking-form.si-theme .si-text.si-desc,.si-fixtures .si-label {
+  color: var(--light-grey)
+}
+
+.si-player-comparison .si-find-player .si-player-item:after,.si-player-comparison .si-find-player .si-player-img,.si-player-comparison .si-head-body-wrapper,.si-tournament-stat .si-table-section .swiper-pagination-bullet,.si-tournament-records .si-table-section .swiper-pagination-bullet,.si-player-ranking-detail .si-card-content:not(:last-child)::after,.si-player-ranking-form .si-card-item:not(:last-child)::after,.si-fixtures .si-searchbar:after,.si-standings .si-table-section .swiper-pagination-bullet,.si-scorestrip-widget .si-card-item:not(:last-child)::after,.si-filter-section .si-list-item:hover {
+  background-color: var(--light-grey)
+}
+
+.si-fixtures .si-card-item.t20 .si-card-format,.si-scorestrip .t20 .si-format {
+  color: var(--t-twenty)
+}
+
+.si-ranking-predictor .si-table-head.si-t20:after,.si-raking-detail .si-table-head.t20:after,.si-standings .si-table-head.t20:after,.si-tabs .si-tab-name.si-active.t20 .si-tab-anchor::before {
+  background-color: var(--t-twenty)
+}
+
+.si-fixtures .si-card-item.odi .si-card-format,.si-scorestrip .odi .si-format {
+  color: var(--odi)
+}
+
+.si-ranking-predictor .si-table-head.si-odi:after,.si-raking-detail .si-table-head.odi:after,.si-standings .si-table-head.odi:after,.si-tabs .si-tab-name.si-active.odi .si-tab-anchor::before {
+  background-color: var(--odi)
+}
+
+.si-fixtures .si-card-item.test .si-card-format,.si-fixtures .si-card-format,.si-scorestrip .test .si-format {
+  color: var(--test-light)
+}
+
+.si-ranking-predictor .si-table-head.si-test:after,.si-raking-detail .si-table-head.test:after,.si-standings .si-table-head.test:after,.si-tabs .si-tab-name.si-active.test .si-tab-anchor::before {
+  background-color: var(--test-light)
+}
+
+.si-ranking-predictor .si-score.si-won {
+  color: var(--test-dark)
+}
+
+.si-ranking-predictor .si-table-data .si-range.down,.si-raking-detail .si-table-data .si-range.down,.si-standings .si-table-data .si-range.down {
+  color: var(--highlight-red)
+}
+
+.si-fixtures .si-card-item.live .si-card-status {
+  background-color: var(--highlight-red)
+}
+
+.si-ranking-predictor .si-table-data .si-range.up,.si-raking-detail .si-table-data .si-range.up,.si-standings .si-table-data .si-range.up {
+  color: var(--highlight-success)
+}
+
+.si-ranking-predictor .si-predictor-body,.si-ranking-predictor .si-table-body .si-table-row:nth-child(odd),.si-player-comparison .si-find-player .si-filter .si-select-box-wrap,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search,.si-tournament-detail .si-table-head .si-table-data,.si-tournament-detail .si-table-body .si-table-row:nth-child(even) .si-table-data,.si-tournament-stat .si-table-row:first-child,.si-tournament-records .si-table-row:first-child,.si-raking-detail .si-filter-section,.si-raking-detail .si-table-head,.si-raking-detail .si-table-body .si-table-row:nth-child(odd),.si-standings .si-table-row:first-child,.si-tabs.si-primary-tab .si-tab-name,.si-tabs.si-secondary-tabs,.si-tabs.si-secondary-tabs .si-tab-name {
+  background-color: var(--grey-one)
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input {
+  background-color: var(--shimmer-light-color)
+}
+
+.si-player-comparison .si-toggle .si-check:checked+.si-switch .si-text::after {
+  color: var(--medium-blue)
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input.si-toggle-left,.si-ranking-predictor .si-toggle .si-toggle-input.si-toggle-right,.si-player-comparison .si-toggle .si-switch {
+  background-color: var(--medium-blue)
+}
+
+.si-tournament-detail .si-head .si-title,.si-tournament-detail .si-head .si-filter-section .si-title,.si-tournament-detail .si-table-head .si-table-data .si-text,.si-standings-page .si-table-title {
+  color: var(--deep-violet)
+}
+
+.si-ranking-predictor .si-score.si-lost {
+  color: var(--wicket)
+}
+
+.si-social-icon {
+  background-color: rgba(0,0,0,0)
+}
+
+.si-ranking-predictor .si-predictor-body,.si-ranking-predictor .si-score-item,.si-ranking-predictor .si-score-btn .si-text,.si-ranking-predictor .si-score-count-item,.si-ranking-predictor .si-btn-section .si-btn-site,.si-ranking-predictor .si-table-info-text,.si-ranking-predictor .si-table-footer .si-btn-site,.si-ranking-predictor .si-table-head,.si-ranking-predictor .si-table-data.si-pos,.si-ranking-predictor .si-table-data .si-range,.si-ranking-predictor .si-table-body .si-table-row,.si-player-comparison .si-player-thumbnail,.si-player-comparison .si-player-thumbnail .si-player-img,.si-player-comparison .si-player-content,.si-player-comparison .si-player-select,.si-player-comparison .si-find-player .si-head,.si-player-comparison .si-find-player .si-filter .si-select-box,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-player-item,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-player-comparison .si-toggle .si-switch,.si-tournament-detail .si-table-left,.si-tournament-detail .si-table-left .si-table-body .si-table-data.si-pos,.si-tournament-detail .si-table-body .si-table-data,.si-tournament-stat .si-table-head,.si-tournament-records .si-table-head,.si-tournament-stat .si-table-footer .si-btn-site,.si-tournament-records .si-table-footer .si-btn-site,.si-tournament-stat .si-table-row,.si-tournament-records .si-table-row,.si-tournament-stat .si-table-data.si-pos,.si-tournament-records .si-table-data.si-pos,.si-standings-page .si-qualify .si-data,.si-player-ranking-list .si-tabs,.si-player-ranking-list .si-tabs .si-tab-anchor,.si-player-ranking-list .si-number,.si-player-ranking-detail .si-card-head,.si-player-ranking-detail .si-card-content,.si-player-ranking-form .si-card,.si-player-ranking-form .si-card-item,.si-player-ranking-list .si-card-item,.si-player-ranking-detail .si-card-item,.si-player-ranking-graph .si-card-head,.si-player-ranking-form .si-card-head,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link,.si-raking-detail .si-table-footer .si-btn-site,.si-raking-detail .si-table-head,.si-raking-detail .si-table-data.si-pos,.si-raking-detail .si-table-data .si-range,.si-raking-detail .si-table-body .si-table-row,.si-fixtures .si-head,.si-fixtures .si-card-body,.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-team,.si-fixtures .si-searchbar,.si-fixtures .si-searchbar .btn-search,.si-standings .si-table-head,.si-standings .si-table-footer .si-btn-site,.si-standings .si-table-row,.si-standings .si-table-data.si-pos,.si-standings .si-table-data .si-range,.si-scorestrip .si-head,.si-scorestrip .si-card-head,.si-scorestrip .si-card-section,.si-scorestrip .si-team-wrapper,.si-scorestrip .si-text,.si-scorestrip .si-loadmore-wrap,.si-scorestrip-widget .si-card-item:not(:last-child),.si-filter-section,.si-filter-section .si-select-box.si-active,.si-stat-filter .si-btn-stat .si-btn-text,.si-stat-filter .si-filter-wrap .si-title,.si-stat-filter .si-filter-wrap .si-select-box,.si-tabs .si-tab-name.si-active .si-tab-anchor,.si-tabs.si-primary-tab .si-tab-name,.si-tabs.si-secondary-tabs .si-tab-name {
+  position: relative
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search,.si-player-ranking-list .si-number:after {
+  position: absolute;
+  inset-block: 0;
+  margin-block:auto}
+
+.si-tabs.si-primary-tab .si-tab-name.si-active::after {
+  position: absolute;
+  inset-inline: 0;
+  margin-inline:auto}
+
+.si-player-comparison .si-player-thumbnail .si-btn-add {
+  position: absolute;
+  inset: 0;
+  margin: auto
+}
+
+.si-ranking-predictor .si-score-item:first-child:after,.si-ranking-predictor .si-score-count-item:first-child:after,.si-tournament-detail .si-table-left::after {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+
+.si-ranking-predictor .si-table-head:after,.si-ranking-predictor .si-table-body .si-table-row:after,.si-player-comparison .si-find-player .si-player-item:after,.si-tournament-detail .si-table-body .si-table-data:after,.si-tournament-stat .si-table-row:after,.si-tournament-records .si-table-row:after,.si-player-ranking-list .si-tabs:before,.si-player-ranking-detail .si-card-content:not(:last-child)::after,.si-player-ranking-form .si-card-item:not(:last-child)::after,.si-raking-detail .si-table-head:after,.si-raking-detail .si-table-body .si-table-row:after,.si-fixtures .si-searchbar:after,.si-standings .si-table-head:after,.si-standings .si-table-row:after,.si-stat-filter .si-filter-wrap .si-select-box:after {
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-tournament-records .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-raking-detail .si-filter-section,.si-fixtures .si-no-data-wrap .si-text,.si-standings .si-table-section .swiper-pagination .swiper-pagination-bullet-active {
+  border-radius: var(--full-radius)
+}
+
+.si-tournament-detail .si-no-data-text,.si-fixtures .si-card-item {
+  border-radius: var(--half-radius)
+}
+
+.si-ranking-predictor .si-score-btn,.si-ranking-predictor .si-toggle .si-toggle-input::-webkit-slider-thumb,.si-ranking-predictor .si-table-data .si-range.neutral,.si-player-comparison .si-find-player .si-player-img,.si-player-comparison .si-find-player .si-footer .si-btn-add:before,.si-tournament-stat .si-table-section .swiper-pagination-bullet,.si-tournament-records .si-table-section .swiper-pagination-bullet,.si-raking-detail .si-table-data .si-range.neutral,.si-standings .si-table-section .swiper-pagination-bullet,.si-standings .si-table-data .si-range.neutral,.si-scorestrip .swiper-pagination-bullet,.flatpickr-calendar .si-event-date {
+  border-radius: 50%
+}
+
+.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-btn-site,.si-scorestrip .swiper-pagination-bullet-active {
+  border-radius: 50vmax
+}
+
+.si-player-comparison .si-card-title,.si-tournament-detail .si-head .si-title,.si-standings-page .si-standing-points .si-standing-points-title,.si-raking-detail .si-filter-section .si-filter-title {
+  margin-top: var(--space-0)
+}
+
+.si-fixtures .si-card-venue {
+  margin-top: var(--space-1)
+}
+
+.si-player-comparison .si-player-content {
+  margin-top: var(--space-2)
+}
+
+.si-scorestrip .si-team-wrapper {
+  padding-top: var(--space-2)
+}
+
+.si-player-comparison .si-player .si-team {
+  margin-top: var(--space-4)
+}
+
+.si-player-ranking-detail .si-card-item,.si-player-ranking-graph .si-card,.si-player-ranking-form .si-card,.si-fixtures .si-title-wrap {
+  padding-top: var(--space-6)
+}
+
+.si-player-comparison .si-head-body-wrapper {
+  padding-top: var(--space-7)
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination,.si-stat-filter .si-btn-stat {
+  margin-top: var(--space-8)
+}
+
+.si-fixtures .si-card-footer {
+  margin-top: var(--space-10)
+}
+
+.si-scorestrip .si-team-logo,.si-scorestrip .si-date {
+  margin-right: var(--space-1)
+}
+
+.si-tournament-detail .si-team .si-team-logo,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo,.si-shimmer.si-raking-detail .si-table-body .si-pos .si-text {
+  margin-right: var(--space-2)
+}
+
+.si-ranking-predictor .si-table-data.si-pos,.si-tournament-stat .si-table-data.si-pos .si-text,.si-tournament-records .si-table-data.si-pos .si-text,.si-tournament-records .si-team-stats .si-table-row:first-child,.si-player-ranking-detail .si-number,.si-raking-detail .si-table-data.si-pos,.si-raking-detail .si-table-data.si-rating,.si-standings .si-table-data.si-pos .si-text,.si-scorestrip .si-card-item:last-child {
+  padding-right: var(--space-2)
+}
+
+.si-tournament-stat .si-table-data.si-pos,.si-tournament-records .si-table-data.si-pos,.si-raking-detail.si-player-ranking .si-table-data.si-pos .si-text,.si-standings .si-table-data.si-pos {
+  padding-right: var(--space-3)
+}
+
+.si-ranking-predictor .si-table-data.si-pos .si-text,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-raking-detail .si-table-data.si-pos .si-text {
+  padding-right: var(--space-4)
+}
+
+.si-player-ranking-list .si-card-item {
+  padding-right: var(--space-10)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-title,.si-fixtures .si-card-item:last-child {
+  margin-bottom: var(--space-0)
+}
+
+.si-standings-page .si-standing-points .si-standing-points-list .si-text {
+  margin-bottom: var(--space-1)
+}
+
+.si-ranking-predictor .si-predictor-head,.si-player-comparison .si-find-player .si-filter .si-label,.si-fixtures .si-card-head,.si-scorestrip .si-card-head,.si-scorestrip .si-card-text {
+  margin-bottom: var(--space-2)
+}
+
+.si-player-ranking-detail .si-card-item,.si-player-ranking-graph .si-card,.si-player-ranking-form .si-card {
+  padding-bottom: var(--space-2)
+}
+
+.si-scorestrip .si-team-wrapper>*:not(:last-child) {
+  margin-bottom: var(--space-3)
+}
+
+.si-player-comparison .si-head-body-wrapper,.si-scorestrip .si-team-wrapper {
+  padding-bottom: var(--space-3)
+}
+
+.si-player-comparison .si-card-title,.si-player-comparison .si-find-player .si-filter .si-select-box,.si-tournament-detail .si-head .si-title,.si-tournament-stat .si-card-head,.si-tournament-records .si-card-head,.si-player-ranking-list .si-tabs,.si-player-ranking-list,.si-player-ranking-detail,.si-player-ranking-graph,.si-player-ranking-form,.si-raking-detail .si-filter-section .si-filter-title,.si-fixtures .si-tabs,.si-scorestrip-widget .si-card-list {
+  margin-bottom: var(--space-4)
+}
+
+.si-standings-page .si-body,.si-fixtures .si-head {
+  padding-bottom: var(--space-4)
+}
+
+.si-standings-page .si-standing-points .si-standing-points-title,.si-scorestrip .si-head {
+  margin-bottom: var(--space-5)
+}
+
+.si-player-comparison .si-find-player .si-head {
+  padding-bottom: var(--space-5)
+}
+
+.si-ranking-predictor .si-tab-section,.si-ranking-predictor .si-rankings-table-section .si-head,.si-player-comparison .si-player,.si-player-comparison .si-find-player .si-filter .si-searchbar,.si-tournament-detail .si-head,.si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination,.si-raking-detail .si-head,.si-raking-detail .si-tab-section,.si-raking-detail .si-filter-section,.si-tabs.si-primary-tab,.si-tabs.si-secondary-tabs {
+  margin-bottom: var(--space-6)
+}
+
+.si-ranking-predictor .si-rankings-table-wrapper,.si-player-ranking-detail .si-card-head,.si-player-ranking-graph .si-card-head,.si-player-ranking-form .si-card-head,.si-scorestrip-widget .si-body {
+  padding-bottom: var(--space-6)
+}
+
+.si-fixtures .si-searchbar,.si-stat-filter .si-btn-stat {
+  margin-bottom: var(--space-7)
+}
+
+.si-ranking-predictor .si-head {
+  margin-bottom: var(--space-10)
+}
+
+.si-stat-filter .si-filter-wrap .si-select-list,.si-tabs {
+  padding-left: var(--space-0)
+}
+
+.si-standings .si-table-data .si-range.neutral {
+  margin-left: var(--space-1)
+}
+
+.si-ranking-predictor .si-table-data.si-team .si-team-name,.si-raking-detail .si-table-data.si-team .si-team-name,.si-fixtures .si-team-name,.si-scorestrip .si-card-footer .si-btn-site::after,.si-filter-section .si-date-action {
+  margin-left: var(--space-2)
+}
+
+.si-tournament-stat .si-table-data .si-player-info,.si-tournament-records .si-table-data .si-player-info,.si-raking-detail .si-table-data.si-pos,.si-standings .si-table-data .si-player-info,.si-scorestrip {
+  padding-left: var(--space-2)
+}
+
+.si-ranking-predictor .si-table-data.si-pos {
+  padding-left: var(--space-4)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-ranking-list .si-card-item,.si-raking-detail .si-filter-section .si-filter-wrap .si-selected-title {
+  padding-left: var(--space-5)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title::after,.si-shimmer.si-fixtures .si-card-label {
+  margin-left: auto
+}
+
+.si-fixtures .si-wrapper {
+  margin-inline:var(--space-0)}
+
+.si-player-comparison .si-find-player .si-head .si-btn-close,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-tabs .si-tab-anchor {
+  padding-inline: var(--space-0)
+}
+
+.si-ranking-predictor .si-tab-section .si-tab-anchor,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-batavg,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-batavg,.si-raking-detail .si-tab-section .si-tab-anchor {
+  padding-inline:var(--space-1)}
+
+.si-player-comparison .si-tabs,.si-player-comparison .si-card-section,.si-fixtures .si-card-item .si-btn-text::after {
+  margin-inline:var(--space-2)
+}
+
+.si-player-comparison .si-player,.si-tournament-stat .si-table-row,.si-tournament-records .si-table-row,.si-standings-page .si-table-row,.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-searchbar,.si-standings .si-table-row {
+  padding-inline:var(--space-2)}
+
+.si-fixtures .si-tab-card-section .si-title {
+  margin-inline: var(--space-2-neg)
+}
+
+.si-player-comparison .si-card,.si-tournament-detail .si-head .si-filter-section .si-list-item,.si-tournament-stat .si-table-head,.si-tournament-records .si-table-head,.si-fixtures .si-btn-site,.si-fixtures .si-no-data-wrap .si-text,.si-fixtures .si-searchbar .si-input,.si-standings .si-table-head {
+  padding-inline:var(--space-3)}
+
+.si-stat-filter .si-filter-wrap {
+  margin-inline: var(--space-4)
+}
+
+.si-ranking-predictor .si-predictor-body,.si-ranking-predictor .si-score-item,.si-ranking-predictor .si-score-count-item,.si-ranking-predictor .si-rankings-table-wrapper,.si-player-comparison .si-player-content-wrap,.si-player-comparison .si-player-personal-info .si-player-item,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input,.si-player-comparison .si-find-player .si-footer,.si-player-comparison .si-head-body-wrapper,.si-player-ranking-detail .si-card-item,.si-player-ranking-graph .si-card,.si-player-ranking-form .si-card,.si-fixtures .si-tab-card-section .si-title,.si-scorestrip-widget {
+  padding-inline:var(--space-4)}
+
+.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-filter-section .si-list-item {
+  padding-inline: var(--space-5)
+}
+
+.si-fp-today {
+  margin-inline:var(--space-6)}
+
+.si-scorestrip .si-loadmore-wrap {
+  padding-inline: var(--space-6)
+}
+
+.si-ranking-predictor .si-btn-section .si-btn-site,.si-ranking-predictor .si-table-footer .si-btn-site,.si-raking-detail .si-table-footer .si-btn-site {
+  padding-inline:var(--space-10)}
+
+.si-ranking-predictor .si-table-info-text::after,.si-player-comparison .si-chart-wrapper,.si-stat-filter .si-btn-stat {
+  margin-inline:auto
+}
+
+.si-ranking-predictor .si-head .si-desc,.si-ranking-predictor .si-team-name,.si-ranking-predictor .si-table-data.si-team .si-team-name,.si-player-comparison .si-player-content .si-select-player-title .si-title,.si-player-comparison .si-player-name,.si-player-comparison .si-find-player .si-head .si-title,.si-player-comparison .si-find-player .si-filter .si-label .si-text,.si-player-comparison .si-find-player .si-filter .si-sub-title,.si-player-comparison .si-find-player .si-filter .si-title,.si-player-comparison .si-find-player .si-player-name .si-text,.si-player-comparison .si-find-player .si-footer .si-footer-title,.si-tournament-detail .si-table-left .si-table-data.si-player .si-player-name,.si-tournament-detail .si-team .si-team-name,.si-tournament-detail .si-team .si-player-name,.si-tournament-detail .si-no-data-text .si-text,.si-tournament-stat .si-card-title,.si-tournament-records .si-card-title,.si-tournament-stat .si-table-data .si-player-name,.si-tournament-records .si-table-data .si-player-name,.si-tournament-stat .si-table-title,.si-tournament-records .si-table-title,.si-standings-page .si-title,.si-standings-page .si-team-name,.si-player-ranking-detail .si-card-title,.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title,.si-raking-detail .si-head .si-title,.si-raking-detail .si-head .si-desc,.si-raking-detail .si-table-data.si-team .si-team-name,.si-raking-detail.si-player-ranking .si-table-data.si-player .si-player-name,.si-fixtures .si-title,.si-fixtures .si-card-item.upcoming .si-team-name,.si-fixtures .si-team-name,.si-standings .si-head .si-title,.si-standings .si-table-data .si-player-name,.si-standings .si-table-title,.si-scorestrip .si-title,.si-filter-section .si-sub-title,.si-stat-filter .si-filter-wrap .si-select-list,.si-tabs {
+  margin-block:var(--space-0)}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data,.si-fixtures .si-card-item.upcoming .si-team {
+  padding-block:var(--space-0)
+}
+
+.si-ranking-predictor .si-score-item,.si-ranking-predictor .si-score-count-item,.si-fixtures .si-card-item.live .si-card-status {
+  padding-block:var(--space-1)}
+
+.si-ranking-predictor .si-head .si-title {
+  margin-block: var(--space-2)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input,.si-fixtures .si-team,.si-fixtures .si-no-data-wrap .si-text,.si-scorestrip .si-card-list {
+  padding-block:var(--space-2)}
+
+.si-player-comparison .si-player-personal-info .si-player-item,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-tournament-records .si-table-row:first-child .si-table-data,.si-fixtures .si-tab-card-section .si-title {
+  padding-block:var(--space-3)
+}
+
+.si-player-comparison .si-card-section,.si-player-comparison .si-find-player .si-filter .si-btn-link,.si-fixtures .si-no-data-wrap,.si-standings .si-head,.si-standings .si-table-section .swiper-pagination {
+  margin-block:var(--space-4)}
+
+.si-player-comparison .si-card-item,.si-player-ranking-form .si-card-item,.si-stat-filter .si-filter-wrap {
+  padding-block: var(--space-4)
+}
+
+.si-standings-page .si-standing-points {
+  margin-block:var(--space-5)}
+
+.si-player-comparison .si-player,.si-player-comparison .si-card,.si-player-ranking-list .si-card-item {
+  padding-block: var(--space-5)
+}
+
+.si-ranking-predictor .si-table-footer,.si-standings-page .si-table-title,.si-raking-detail .si-table-footer,.si-fixtures .si-card-item,.si-fp-today {
+  margin-block:var(--space-6)}
+
+.si-player-comparison .si-find-player .si-footer,.si-scorestrip .si-head {
+  padding-block: var(--space-6)
+}
+
+.si-fixtures .si-tab-card-section {
+  margin-block:var(--space-8)}
+
+.si-ranking-predictor .si-table-info {
+  padding-block: var(--space-9)
+}
+
+.si-filter-section .si-selected-title,.si-filter-section .si-date-range label,.si-filter-section .si-btn-calendar,.si-filter-section .add-cal {
+  padding: var(--space-2) var(--space-4)
+}
+
+.si-filter-section .si-select-box-wrap {
+  padding: var(--space-4) var(--space-2)
+}
+
+.si-scorestrip .si-match-status {
+  margin: var(--space-0)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-btn-link,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search,.si-fixtures .si-searchbar .btn-search,.si-stat-filter .si-btn-stat,.si-stat-filter .si-filter-wrap .si-select-box-wrap,.si-social-share .si-share-icon,.si-social-icon {
+  padding: var(--space-0)
+}
+
+.si-player-comparison .si-tabs,.si-player-ranking-list .si-tabs,.si-tabs.si-secondary-tabs {
+  gap: var(--space-0)
+}
+
+.si-player-ranking-list .si-card-content,.si-tabs.si-primary-tab {
+  gap: var(--space-1)
+}
+
+.si-tournament-detail .si-no-data-text {
+  margin: var(--space-2)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search,.si-tournament-detail .si-no-data-text {
+  padding: var(--space-2)
+}
+
+.si-ranking-predictor .si-table-data.si-rating.si-fav,.si-player-comparison .si-player-content-wrap,.si-player-comparison .si-player .si-team,.si-player-comparison .si-player-select .si-player-btn,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-filter .si-btn-link,.si-player-comparison .si-find-player .si-player-info,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-tournament-detail .si-head .si-filter-section .si-list-item,.si-standings-page .si-table-data-wrap,.si-standings-page .si-loadmore,.si-player-ranking-list .si-card-list,.si-raking-detail .si-table-data.si-rating.si-fav,.si-fixtures .si-card-format-wrap,.si-filter-section .si-filter-wrap,.si-filter-section .si-selected-title,.si-filter-section .si-date-range label,.si-filter-section .si-btn-calendar,.si-filter-section .add-cal,.si-stat-filter .si-filter-wrap .si-title {
+  gap: var(--space-2)
+}
+
+.si-standings-page .si-loadmore,.si-standings-page.si-integrated-widget .si-head {
+  padding: var(--space-3)
+}
+
+.si-ranking-predictor .si-btn-section .si-btn-site,.si-ranking-predictor .si-table-footer .si-btn-site,.si-raking-detail .si-table-footer .si-btn-site,.si-raking-detail .si-table-data.si-pts.si-fav,.si-fixtures .si-card-footer,.si-standings .si-table-data.si-points.si-fav {
+  gap: var(--space-3)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-select-box-wrap,.si-player-ranking-graph .si-no-data-wrap .si-text,.si-player-ranking-form .si-no-data-wrap .si-text,.si-raking-detail .si-filter-section,.si-fixtures .si-card-item {
+  padding: var(--space-4)
+}
+
+.si-player-comparison .si-card-section,.si-tournament-stat .si-table-footer .si-btn-site,.si-tournament-records .si-table-footer .si-btn-site,.si-player-ranking-detail .si-card-list,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link,.si-fixtures .si-title-wrap,.si-standings .si-table-footer .si-btn-site,.si-scorestrip .swiper-pagination,.si-filter-section .si-date-range label {
+  gap: var(--space-4)
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination,.si-standings .si-table-section .swiper-pagination {
+  gap: var(--space-5)
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap {
+  gap: var(--space-6)
+}
+
+.si-standings-page .si-tabs,.si-stat-filter .si-filter-wrap,.si-tabs {
+  gap: var(--space-8)
+}
+
+.si-ranking-predictor .si-tab-section,.si-player-comparison .si-player-content,.si-raking-detail .si-tab-section {
+  gap: var(--space-10)
+}
+
+.si-fixtures .si-card-item.live .si-card-status::before {
+  margin: auto
+}
+
+.si-player-ranking-form .si-text.si-number {
+  width: 30%
+}
+
+.si-shimmer.si-scorestrip .si-team-data {
+  width: 60%
+}
+
+.si-player-ranking-form .si-text.si-team {
+  width: 70%
+}
+
+.si-player-comparison .si-player-select .si-player-btn {
+  width: 80%
+}
+
+.si-ranking-predictor .si-predictor-body:after,.si-ranking-predictor .si-team-logo .si-logo,.si-ranking-predictor .si-score-wrapper,.si-ranking-predictor .si-score-item:first-child:after,.si-ranking-predictor .si-score-btn .si-text,.si-ranking-predictor .si-score-count-item:first-child:after,.si-ranking-predictor .si-score-count-wrapper,.si-ranking-predictor .si-table-data,.si-ranking-predictor .si-table-head .si-table-row,.si-ranking-predictor .si-table-data.si-team .si-logo,.si-player-comparison .si-player-thumbnail .si-image,.si-player-comparison .si-player-thumbnail::before,.si-player-comparison .si-player .si-team-image .si-image,.si-player-comparison .si-find-player,.si-player-comparison .si-find-player.si-active::before,.si-player-comparison .si-find-player .si-filter .si-select-list,.si-player-comparison .si-find-player .si-player-img img,.si-player-comparison .si-find-player .si-team-img img,.si-tournament-detail .si-team .si-team-logo .si-logo,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo .si-logo,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo .si-logo,.si-tournament-stat .si-table-data,.si-tournament-records .si-table-data,.si-tournament-stat .si-table-row:first-child .si-table-data-wrap,.si-tournament-records .si-table-row:first-child .si-table-data-wrap,.si-tournament-stat .si-table-row:first-child .si-table-data-wrap .si-image,.si-tournament-records .si-table-row:first-child .si-table-data-wrap .si-image,.si-tournament-stat .si-table-row:first-child .si-player-info,.si-tournament-records .si-table-row:first-child .si-player-info,.si-tournament-records .si-table-row:first-child .si-player-image .si-image,.si-raking-detail .si-table-data,.si-raking-detail .si-table-head .si-table-row,.si-raking-detail .si-table-data.si-team .si-logo,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-info,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-image::before,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-image,.si-standings .si-table-data,.si-standings .si-table-row:first-child::before,.si-standings .si-table-row:first-child .si-table-data-wrap,.si-standings .si-table-row:first-child .si-table-data-wrap .si-image,.si-standings .si-table-row:first-child .si-player-info,.si-stat-filter .si-filter-wrap {
+  height: 100%
+}
+
+.si-ranking-predictor .si-team-logo .si-logo,.si-ranking-predictor .si-rankings-table-section,.si-ranking-predictor .si-table-head:after,.si-ranking-predictor .si-table-data.si-team .si-logo,.si-ranking-predictor .si-table-body .si-table-row:after,.si-player-comparison .si-tabs .si-tab-anchor,.si-player-comparison .si-player-thumbnail .si-image,.si-player-comparison .si-player-thumbnail::before,.si-player-comparison .si-player-content,.si-player-comparison .si-player .si-team-image .si-image,.si-player-comparison .si-player-select,.si-player-comparison .si-find-player,.si-player-comparison .si-find-player .si-filter .si-select-list,.si-player-comparison .si-find-player .si-filter .si-select-item,.si-player-comparison .si-find-player .si-filter .si-list-item,.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input,.si-player-comparison .si-find-player .si-player-info,.si-player-comparison .si-find-player .si-player-img img,.si-player-comparison .si-find-player .si-player-name,.si-player-comparison .si-find-player .si-team-img img,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-tournament-detail .si-head .si-filter-section .si-select-box-wrap,.si-tournament-detail .si-head .si-filter-section .si-select-box,.si-tournament-detail .si-table-left::after,.si-tournament-detail .si-team .si-team-logo .si-logo,.si-tournament-detail .si-team .si-table-data-wrap,.si-tournament-detail .si-table-body .si-table-data:after,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo .si-logo,.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo .si-logo,.si-tournament-stat .si-table-row:after,.si-tournament-records .si-table-row:after,.si-tournament-records .si-table-row:first-child .si-player-image .si-image,.si-player-ranking-list .si-tabs:before,.si-player-ranking-list .si-tabs .si-tab-anchor,.si-player-ranking-detail .si-card-content:not(:last-child)::after,.si-player-ranking-detail .si-card-title,.si-player-ranking-form .si-card-item:not(:last-child)::after,.si-player-ranking-form .si-text.si-desc,.si-player-ranking-form .si-text.si-name,.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title,.si-raking-detail .si-filter-section .si-select-box-wrap,.si-raking-detail .si-table-head:after,.si-raking-detail .si-table-data.si-team .si-logo,.si-raking-detail .si-table-body .si-table-row:after,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-info,.si-fixtures .si-wrapper,.si-fixtures .si-card-body::after,.si-fixtures .si-team:not(:nth-of-type(2))::after,.si-fixtures .si-searchbar .si-input,.si-standings .si-table-head:after,.si-standings .si-table-row:after,.si-shimmer.si-standings .si-table-title,.si-shimmer.si-standings .si-text,.si-filter-section .si-filter-wrap,.si-filter-section .si-list-item,.si-stat-filter,.si-stat-filter .si-btn-stat,.si-stat-filter .si-filter-wrap .si-select-box:after,.si-stat-filter .si-filter-wrap .si-select-box-wrap,.si-tabs .si-tab-name.si-active .si-tab-anchor::before,html {
+  width: 100%
+}
+
+.si-ranking-predictor .si-head .si-title,.si-ranking-predictor .si-team-name .si-text,.si-ranking-predictor .si-btn-section .si-btn-text,.si-ranking-predictor .si-table-info-text,.si-ranking-predictor .si-table-footer .si-btn-text,.si-ranking-predictor .si-table-head .si-table-data .si-text,.si-ranking-predictor .si-table-data .si-text,.si-player-comparison .si-player-content .si-select-player-title .si-title,.si-player-comparison .si-player-name .si-lname,.si-player-comparison .si-player-select .si-btn-text,.si-player-comparison .si-card-title,.si-player-comparison .si-card-item .si-label,.si-player-comparison .si-find-player .si-head .si-title,.si-player-comparison .si-find-player .si-filter .si-label .si-text,.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-player-comparison .si-find-player .si-filter .si-sub-title,.si-player-comparison .si-find-player .si-filter .si-title,.si-player-comparison .si-find-player .si-filter .si-btn-link .si-btn-text,.si-player-comparison .si-find-player .si-player-role .si-text,.si-player-comparison .si-find-player .si-footer .si-footer-title,.si-tournament-detail .si-head .si-title,.si-tournament-team-detail .si-team .si-name,.si-tournament-stat-detail .si-team .si-team-name .si-name,.si-tournament-stat .si-card-title,.si-tournament-records .si-card-title,.si-tournament-stat .si-table-footer .si-text,.si-tournament-records .si-table-footer .si-text,.si-tournament-stat .si-table-data .si-player-name .si-name,.si-tournament-stat .si-table-data .si-player-name .si-country,.si-tournament-records .si-table-data .si-player-name .si-name,.si-tournament-records .si-table-data .si-player-name .si-country,.si-tournament-stat .si-table-title,.si-tournament-records .si-table-title,.si-standings-page .si-tab-text,.si-standings-page .si-table-title,.si-standings-page .si-data,.si-standings-page .si-loadmore,.si-player-ranking-list .si-title,.si-player-ranking-detail .si-card-title,.si-player-ranking-detail .si-label,.si-player-ranking-form .si-text.si-team,.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title,.si-raking-detail .si-head .si-title,.si-raking-detail .si-table-footer .si-btn-text,.si-raking-detail .si-table-data .si-text,.si-fixtures .si-title,.si-fixtures .si-tab-card-section .si-title,.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-card-item.upcoming .si-card-label,.si-fixtures .si-card-item .si-btn-text,.si-fixtures .si-card-format,.si-fixtures .si-team-name .si-name,.si-standings .si-head .si-title,.si-standings .si-table-footer .si-text,.si-standings .si-table-data .si-player-name .si-name,.si-standings .si-table-data .si-player-name .si-country,.si-standings .si-table-title,.si-scorestrip .si-title,.si-scorestrip .si-card-label,.si-scorestrip .si-card-footer .si-btn-site,.si-scorestrip .si-team-data-wrap,.si-scorestrip .si-format,.si-scorestrip .si-text,.si-scorestrip .si-date,.si-scorestrip .si-sname,.si-scorestrip .si-load-more,.si-filter-section .si-date-range label,.si-filter-section .si-sub-title,.si-filter-section .si-btn-text,.si-filter-section .add-cal__text,.si-fp-today,.si-stat-filter .si-btn-stat .si-btn-text,.si-stat-filter .si-filter-wrap .si-sub-title,.si-stat-filter .si-filter-wrap .si-title,.si-stat-filter .si-filter-wrap .si-count,.si-tabs .si-tab-text,.si-tabs.si-primary-tab .si-tab-name .si-name,.si-tabs.si-primary-tab .si-tab-name .si-text {
+  text-transform: uppercase
+}
+
+.si-player-comparison .si-player-name .si-fname,.si-player-comparison .si-find-player .si-player-name .si-text,.si-tournament-detail .si-table-head .si-table-data .si-text,.si-tournament-detail .si-table-body .si-table-data .si-text,.si-tournament-detail .si-no-data-text,.si-standings-page .si-standing-points .si-standing-points-title,.si-standings-page .si-standing-points .si-standing-points-list .si-text .si-highlight,.si-player-ranking-list .si-text,.si-raking-detail .si-table-head .si-table-data .si-text,.si-raking-detail.si-player-ranking .si-table-data.si-player .si-fname,.si-fixtures .si-no-data-wrap .si-text,.si-scorestrip .si-card-text,.si-stat-filter .si-filter-wrap .si-list-item .si-text,.si-tabs.si-secondary-tabs .si-tab-name .si-name {
+  text-transform: capitalize
+}
+
+.si-ranking-predictor .si-predictor-item,.si-ranking-predictor .si-predictor-result,.si-ranking-predictor .si-table-info,.si-player-comparison .si-player-content .si-select-player-title .si-title,.si-player-comparison .si-player-personal-info .si-label,.si-player-comparison .si-card-title,.si-player-comparison .si-card-item .si-number,.si-player-comparison .si-card-item .si-label,.si-player-comparison .si-find-player .si-footer .si-footer-title,.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-text,.si-standings-page .si-table-data,.si-standings-page .si-no-data-text,.si-player-ranking-detail .si-card-title,.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title,.si-fixtures .si-btn-site,.si-scorestrip .si-title,.si-tabs.si-primary-tab .si-tab-name .si-name,.si-tabs.si-primary-tab .si-tab-name .si-text {
+  text-align: center
+}
+
+.si-player-comparison .si-find-player .si-filter .si-list-item .si-link,.si-player-comparison .si-find-player .si-player-name .si-text,.si-filter-section .si-list-item {
+  text-align: left
+}
+
+.si-player-comparison .si-player-personal-info .si-player-item span:last-child,.si-player-ranking-list .si-number,.si-player-ranking-form .si-text.si-number,.si-fixtures .si-sponsor,.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-team-score-wrap {
+  text-align: right
+}
+
+.si-ranking-predictor .si-predictor-wrapper.si-test .si-toggle,.si-ranking-predictor .si-predictor-wrapper.si-odi .si-score-wrapper,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-score-wrapper,.si-ranking-predictor .si-team-name .si-fname,.si-ranking-predictor .si-table-footer,.si-ranking-predictor .si-table-data.si-team .si-sname,.si-player-comparison .si-find-player .si-filter .si-select-box-wrap,.si-player-comparison .si-find-player .si-filter .si-sub-title,.si-tournament-detail .si-table-left .si-table-data.si-player,.si-tournament-detail .si-team .si-team-name,.si-tournament-team-detail .si-team .si-fname,.si-standings-page .si-title,.si-standings-page .si-lname,.si-standings-page .si-won,.si-standings-page .si-lost,.si-standings-page .si-noresult,.si-standings-page .si-draw,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link.si-btn-reset::after,.si-raking-detail .si-table-data.si-team .si-fname,.si-raking-detail.si-player-ranking .si-table-data.si-best,.si-raking-detail.si-player-ranking .si-table-data.si-team .si-team-name,.si-raking-detail.si-team-ranking .si-team-name .si-fname,.si-fixtures .si-title-wrap,.si-fixtures .si-card-status,.si-fixtures .si-card-item.live .si-card-date,.si-fixtures .si-card-item.upcoming .si-card-date,.si-fixtures .si-card-item.upcoming .si-team::after,.si-fixtures .si-card-item.upcoming .si-team-score-wrap,.si-fixtures .si-card-label,.si-fixtures .si-sname,.si-shimmer.si-scorestrip .si-btn-site:after,.si-shimmer.si-standings .si-table .si-range.neutral,.si-shimmer.si-standings .si-pos::after,.si-shimmer.si-fixtures .si-card-item.live .si-card-status,.si-filter-section .si-title,.si-filter-section .si-select-box-wrap,.si-filter-section .si-dropdown-close,.si-filter-section .add-cal__icon-container,.si-stat-filter .si-filter-title,.si-social-share .si-share-label,.si-social-share-wrap,.si-desktop {
+  display: none
+}
+
+.si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle,.si-ranking-predictor .si-score-btn .si-text,.si-ranking-predictor .si-table-data.si-team .si-fname,.si-player-comparison .si-card-item .si-number .si-text,.si-player-comparison .si-chart-wrapper,.si-player-comparison .si-toggle .si-switch,.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name .si-fname,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-fname,.si-player-ranking-detail .si-text,.si-fixtures .si-card-item.live .si-card-status,.si-standings .si-table-row:first-child .si-table-data .si-player-name .si-fname,.si-filter-section .si-select-box.si-active .si-select-box-wrap,.si-mobile {
+  display: block
+}
+
+.si-ranking-predictor .si-tab-section,.si-ranking-predictor .si-score-count-wrapper,.si-player-comparison .si-player-wrap,.si-player-comparison .si-player-content-wrap,.si-player-comparison .si-find-player .si-filter .si-select-box,.si-player-comparison .si-find-player .si-filter .si-select-box.si-active .si-select-box-wrap,.si-player-comparison .si-find-player .si-filter .si-team-search .si-search,.si-tournament-detail .si-head .si-filter-section .si-title,.si-tournament-detail .si-table,.si-tournament-detail .si-table-head .si-table-row,.si-tournament-detail .si-table-body .si-table-row,.si-tournament-stat-detail .si-team .si-team-name,.si-tournament-stat .si-table-section .swiper-wrapper,.si-tournament-records .si-table-section .swiper-wrapper,.si-player-ranking-form .si-card-item,.si-raking-detail .si-tab-section,.si-raking-detail.si-team-ranking .si-team-name .si-sname,.si-fixtures .si-card-footer,.si-standings .si-table-section .swiper-wrapper,.si-scorestrip .si-card-head,.si-scorestrip .si-team-data,.si-filter-section,.si-filter-section .si-filter-wrap,.si-stat-filter .si-filter-wrap .si-title,.si-social-share.si-active .si-social-share-wrap,.si-social-items,.si-social-wrap,.si-tabs,.si-tabs-container,.si-tabs.si-primary-tab {
+  display: flex
+}
+
+.si-player-comparison .si-player-thumbnail,.si-player-comparison .si-player-content,.si-player-comparison .si-player-name,.si-player-comparison .si-card-section,.si-player-comparison .si-find-player,.si-tournament-detail .si-head,.si-tournament-detail .si-team .si-player-name,.si-tournament-detail .si-team .si-player-name .si-player-name-wrap,.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name,.si-player-ranking-list .si-card-content,.si-player-ranking-list .si-card-list,.si-player-ranking-detail .si-card-list,.si-raking-detail .si-filter-section .si-filter-wrap,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-name,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-name .si-player-name-wrap,.si-fixtures .si-sponsor,.si-stat-filter .si-filter-wrap .si-select-box-wrap {
+  display: flex;
+  flex-direction: column
+}
+
+.si-ranking-predictor .si-predictor-body,.si-ranking-predictor .si-table-row,.si-player-comparison .si-find-player .si-filter .si-selected-title,.si-player-comparison .si-find-player .si-footer .si-btn-add,.si-tournament-stat .si-table-head,.si-tournament-records .si-table-head,.si-tournament-stat .si-table-footer .si-btn-site,.si-tournament-records .si-table-footer .si-btn-site,.si-player-ranking-list .si-card-wrapper,.si-player-ranking-detail .si-card-content,.si-raking-detail .si-table-row,.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-info,.si-fixtures .si-card-head,.si-fixtures .si-team,.si-standings .si-table-head,.si-standings .si-table-footer .si-btn-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.si-ranking-predictor .si-score-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+}
+
+.si-fixtures .si-card-item.live .si-card-status,.si-fixtures .si-card-item.upcoming .si-card-label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.si-fixtures .si-card-venue {
+  display: flex;
+  justify-content: flex-end
+}
+
+.si-fixtures .si-team-score-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end
+}
+
+.si-ranking-predictor .si-score-btn,.si-ranking-predictor .si-score-btn .si-text,.si-ranking-predictor .si-score-wrapper,.si-ranking-predictor .si-btn-section,.si-ranking-predictor .si-btn-section .si-btn-site,.si-ranking-predictor .si-table-data,.si-ranking-predictor .si-table-footer .si-btn-site,.si-player-comparison .si-player-thumbnail .si-btn-add,.si-player-comparison .si-player-select .si-player-btn,.si-player-comparison .si-find-player .si-head,.si-player-comparison .si-find-player .si-filter .si-btn-link,.si-player-comparison .si-find-player .si-footer .si-btn-add:before,.si-player-comparison .si-toggle,.si-tournament-detail .si-table-head .si-table-data,.si-tournament-detail .si-table-body .si-table-data,.si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination,.si-tournament-stat .si-table-footer,.si-tournament-records .si-table-footer,.si-player-ranking-detail .si-card-head,.si-player-ranking-graph .si-card-head,.si-player-ranking-form .si-card-head,.si-player-ranking-graph .si-no-data-wrap,.si-player-ranking-form .si-no-data-wrap,.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link,.si-raking-detail .si-table-data,.si-raking-detail .si-table-footer,.si-raking-detail .si-table-footer .si-btn-site,.si-fixtures .si-btn-site,.si-fixtures .si-no-data-wrap,.si-standings .si-table-section .swiper-pagination,.si-standings .si-table-footer,.si-scorestrip .swiper-pagination,.si-scorestrip .si-card-footer .si-btn-site,.si-scorestrip .si-load-more,.si-fp-today,.si-stat-filter .si-btn-stat,.si-social-icon::before,.si-social-icon [class^=si-icon-],.si-tabs.si-primary-tab .si-tab-name,.si-tabs.si-secondary-tabs .si-tab-name {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.si-player-comparison .si-player-select,.si-standings-page .si-loadmore-wrap,.si-player-ranking-list .si-tabs .si-tab-anchor {
+  display: flex;
+  justify-content: center
+}
+
+.si-ranking-predictor .si-team,.si-ranking-predictor .si-table-data .si-range,.si-ranking-predictor .si-table-data.si-team .si-table-data-wrap,.si-player-comparison .si-player .si-team,.si-player-comparison .si-find-player .si-player-info,.si-tournament-detail .si-head .si-filter-section .si-list-item,.si-tournament-detail .si-team .si-table-data-wrap,.si-tournament-stat .si-table-row,.si-tournament-records .si-table-row,.si-tournament-stat .si-table-data,.si-tournament-records .si-table-data,.si-tournament-stat .si-table-data.si-player .si-table-data-wrap,.si-tournament-records .si-table-data.si-player .si-table-data-wrap,.si-tournament-stat .si-table-row:first-child .si-player-info,.si-tournament-records .si-table-row:first-child .si-player-info,.si-standings-page .si-tabs,.si-standings-page .si-table-row,.si-standings-page .si-table-data-wrap,.si-standings-page .si-loadmore,.si-standings-page.si-integrated-widget .si-head,.si-raking-detail .si-table-data .si-range,.si-raking-detail .si-table-data.si-team .si-table-data-wrap,.si-fixtures .si-card-format-wrap,.si-fixtures .si-team-info,.si-fixtures .si-searchbar,.si-standings .si-table-row,.si-standings .si-table-data,.si-standings .si-table-data.si-player .si-table-data-wrap,.si-standings .si-table-data .si-range,.si-standings .si-table-row:first-child .si-player-info,.si-scorestrip .si-card-footer .si-btn-site,.si-scorestrip .si-text,.si-filter-section .si-selected-title,.si-filter-section .si-date-range label,.si-filter-section .si-btn-calendar,.si-filter-section .add-cal,.si-stat-filter .si-filter-wrap .si-list-item,.si-tabs .si-tab-anchor {
+  display: flex;
+  align-items: center
+}
+
+.si-ranking-predictor .si-score-count-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.si-fixtures .si-card-head {
+  flex-wrap: wrap
+}
+
+.si-ranking-predictor .si-predictor-body,html.no-scroll,html.no-scroll body {
+  overflow: hidden
+}
+
+.si-tournament-detail .si-table-right {
+  overflow-x: auto
+}
+
+.si-ranking-predictor .si-rankings-table-section.si-active-open {
+  overflow-y: auto
+}
+
+.si-shimmer.si-scorestrip .si-matchinfo,.si-shimmer.si-scorestrip .si-match-details,.si-shimmer.si-scorestrip .si-format,.si-shimmer.si-scorestrip .si-text,.si-shimmer.si-scorestrip .si-team-info,.si-shimmer.si-scorestrip .si-team-logo,.si-shimmer.si-scorestrip .si-team-data,.si-shimmer.si-scorestrip .si-card-text,.si-shimmer.si-scorestrip .si-btn-site,.si-shimmer.si-standings .si-table-title,.si-shimmer.si-standings .si-table .si-text,.si-shimmer.si-standings .si-table .si-range,.si-shimmer.si-standings .si-table-row:first-child .si-table-data .si-player-name,.si-shimmer.si-standings .si-social-share,.si-shimmer.si-standings .si-text,.si-shimmer.si-standings .si-logo,.si-shimmer.si-standings .si-player-name,.si-shimmer.si-standings .si-btn-site,.si-shimmer.si-fixtures .si-card-head,.si-shimmer.si-fixtures .si-card-label,.si-shimmer.si-fixtures .si-card-result,.si-shimmer.si-fixtures .si-team-score-wrap,.si-shimmer.si-fixtures .si-team-logo,.si-shimmer.si-fixtures .si-team-name,.si-shimmer.si-fixtures .si-btn-site,.si-shimmer.si-raking-detail .si-table-body .si-pos .si-text,.si-shimmer.si-raking-detail .si-table-body .si-range,.si-shimmer.si-raking-detail .si-table-body .si-logo,.si-shimmer.si-raking-detail .si-table-body .si-player .si-player-name,.si-shimmer.si-raking-detail .si-table-body .si-rating.si-fav::before,.si-shimmer.si-raking-detail .si-table-body .si-rating .si-text,.si-shimmer.si-raking-detail .si-table-body .si-player-image,.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-sname,.si-shimmer.si-team-ranking .si-table-body .si-team-name,.si-shimmer.si-team-ranking .si-table-body .si-matches .si-text,.si-shimmer.si-team-ranking .si-table-body .si-pts .si-text {
+  -webkit-animation: si-loading 2s linear 0s infinite normal forwards;
+  animation: si-loading 2s linear 0s infinite normal forwards;
+  background-image: var(--shimmer-light-color);
+  background: -webkit-linear-gradient(to right, hsla(var(--hsl-shimmer-light-color)/0.3) 0%, hsla(var(--hsl-shimmer-light-color)/0.3) 20%, hsla(var(--hsl-shimmer-light-color)/0.3) 40%, hsla(var(--hsl-shimmer-light-color)/0.3) 100%);
+  background: -moz-linear-gradient(to right, hsla(var(--hsl-shimmer-light-color)/0.3) 0%, hsla(var(--hsl-shimmer-light-color)/0.3) 20%, hsla(var(--hsl-shimmer-light-color)/0.3) 40%, hsla(var(--hsl-shimmer-light-color)/0.3) 100%);
+  background: -ms-linear-gradient(to right, hsla(var(--hsl-shimmer-light-color)/0.3) 0%, hsla(var(--hsl-shimmer-light-color)/0.3) 20%, hsla(var(--hsl-shimmer-light-color)/0.3) 40%, hsla(var(--hsl-shimmer-light-color)/0.3) 100%);
+  background: -o-linear-gradient(to right, hsla(var(--hsl-shimmer-light-color)/0.3) 0%, hsla(var(--hsl-shimmer-light-color)/0.3) 20%, hsla(var(--hsl-shimmer-light-color)/0.3) 40%, hsla(var(--hsl-shimmer-light-color)/0.3) 100%);
+  background: linear-gradient(to right, hsla(var(--hsl-shimmer-light-color)/0.3) 0%, hsla(var(--hsl-shimmer-light-color)/0.3) 20%, hsla(var(--hsl-shimmer-light-color)/0.3) 40%, hsla(var(--hsl-shimmer-light-color)/0.3) 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  background-color: hsla(var(--hsl-shimmer-light-color)/0.3)
+}
+
+.si-shimmer.si-scorestrip .si-matchinfo,.si-shimmer.si-scorestrip .si-date,.si-shimmer.si-scorestrip .si-format,.si-shimmer.si-scorestrip .si-text,.si-shimmer.si-scorestrip .si-name,.si-shimmer.si-scorestrip .si-score,.si-shimmer.si-scorestrip .si-overs,.si-shimmer.si-scorestrip .si-card-label,.si-shimmer.si-scorestrip .si-match-status,.si-shimmer.si-scorestrip .si-btn-site:after,.si-shimmer.si-scorestrip .si-btn-text,.si-shimmer.si-standings .si-table-title,.si-shimmer.si-standings .si-table .si-text,.si-shimmer.si-standings .si-table .si-range,.si-shimmer.si-standings .si-table .si-range::before,.si-shimmer.si-standings .si-table-row:first-child .si-table-data .si-player-name .si-name,.si-shimmer.si-standings .si-icon-b-share::before,.si-shimmer.si-standings .si-player-name .si-name,.si-shimmer.si-standings .si-btn-site,.si-shimmer.si-standings .si-btn-site::after,.si-shimmer.si-fixtures .si-card-format,.si-shimmer.si-fixtures .si-card-date,.si-shimmer.si-fixtures .si-card-status,.si-shimmer.si-fixtures .si-card-match-info,.si-shimmer.si-fixtures .si-card-venue,.si-shimmer.si-fixtures .si-card-item.live .si-team-score:nth-of-type(2),.si-shimmer.si-fixtures .si-card-item.upcoming .si-card-label,.si-shimmer.si-fixtures .si-card-item .si-btn-text,.si-shimmer.si-fixtures .si-card-item .si-btn-text::after,.si-shimmer.si-fixtures .si-card-result,.si-shimmer.si-fixtures .si-team-score,.si-shimmer.si-fixtures .si-team-name .si-name,.si-shimmer.si-fixtures .si-btn-text,.si-shimmer.si-fixtures .si-btn-text::after,.si-shimmer.si-raking-detail .si-table-body .si-pos .si-text,.si-shimmer.si-raking-detail .si-table-body .si-range,.si-shimmer.si-raking-detail .si-table-body .si-range::before,.si-shimmer.si-raking-detail .si-table-body .si-player .si-player-name .si-fname,.si-shimmer.si-raking-detail .si-table-body .si-player .si-player-name .si-lname,.si-shimmer.si-raking-detail .si-table-body .si-rating .si-text,.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-text,.si-shimmer.si-team-ranking .si-table-body .si-table-data .si-text,.si-shimmer.si-team-ranking .si-table-body .si-table-data .si-sname {
+  font-size: 0
+}
+
+[class^=si-icon-] {
+  font-size: 0;
+  font-style: normal;
+  color: var(--pure-white)
+}
+
+[class^=si-icon-]::before {
+  font-family: "waf-font-icon";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+@keyframes si-loading {
+  0% {
+      background-position: -500px 0
+  }
+
+  100% {
+      background-position: 500px 0
+  }
+}
+
+@-webkit-keyframes si-loading {
+  0% {
+      background-position: -500px 0
+  }
+
+  100% {
+      background-position: 500px 0
+  }
+}
+
+html.no-scroll,html.no-scroll body {
+  height: var(--window-inner-height);
+  touch-action: none;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto
+}
+
+.si-block {
+  display: block
+}
+
+.si-wrapper {
+  max-width: var(--container-max-width);
+  margin: auto
+}
+
+.si-table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+body {
+  font-family: "CWC",sans-serif,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.6
+}
+
+button {
+  cursor: pointer
+}
+
+[hidden] {
+  display: none
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+      -webkit-text-size-adjust:none
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .si-mobile {
+      display:none
+  }
+
+  .si-desktop {
+      display: block
+  }
+}
+
+.si-tabs .si-tab-name {
+  list-style-type: none
+}
+
+.si-tabs .si-tab-name.si-active .si-tab-anchor::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+
+.si-tabs .si-tab-anchor {
+  height: 30px;
+  border: none;
+  background-color: unset
+}
+
+.si-tabs .si-tab-text {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-tabs-container {
+  gap: calc(var(--space-4)*2)
+}
+
+.si-tabs.si-primary-tab .si-tab-name {
+  flex: 1;
+  height: 35px;
+  padding-inline:5px;cursor: pointer
+}
+
+.si-tabs.si-primary-tab .si-tab-name.si-active::after {
+  content: "";
+  width: 0;
+  bottom: var(--space-5-neg);
+  border: 10px solid rgba(0,0,0,0);
+  border-top: 10px solid var(--primary)
+}
+
+.si-tabs.si-primary-tab .si-tab-name .si-name,.si-tabs.si-primary-tab .si-tab-name .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14px
+}
+
+.si-tabs.si-secondary-tabs .si-tab-name {
+  flex: 1;
+  padding-inline:5px;cursor: pointer;
+  height: 40px;
+  border-radius: 6px
+}
+
+@media screen and (min-width: 768px) {
+  .si-tabs.si-primary-tab .si-tab-name {
+      height:48px
+  }
+
+  .si-tabs.si-primary-tab .si-tab-name .si-name {
+      font-size: 14px;
+      line-height: 16px
+  }
+
+  .si-tabs-container {
+      gap: calc(var(--space-7)*2)
+  }
+}
+
+.si-social-icon::before {
+  font-family: "waf-font-icon"
+}
+
+.si-icon-b-facebook::before {
+  content: "";
+  font-size: 14px
+}
+
+.si-icon-b-whatsapp::before {
+  content: "";
+  font-size: 14px
+}
+
+.si-icon-b-twitter::before {
+  content: "";
+  font-size: 14px
+}
+
+.si-icon-b-instagram::before {
+  content: "";
+  font-size: 14px
+}
+
+.si-icon-b-copylink::before {
+  content: "";
+  font-size: 14px
+}
+
+.si-icon-b-facebook {
+  background: #3a589b
+}
+
+.si-icon-b-twitter {
+  background: #55acee
+}
+
+.si-icon-b-whatsapp {
+  background: #25d366
+}
+
+.si-icon-b-copylink {
+  background: #034ea2
+}
+
+.si-social-share {
+  width: 20px;
+  height: 20px
+}
+
+.si-social-share .si-share-icon {
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  border: 0;
+  background: rgba(0,0,0,0);
+  cursor: pointer;
+  font-size: 16px
+}
+
+.si-social-share .si-icon-b-share::before {
+  content: "";
+  font-size: 16px;
+  font-family: "waf-font-icon"
+}
+
+.si-social-share .si-icon-b-close::before {
+  content: "";
+  font-size: 14px;
+  font-family: "waf-font-icon"
+}
+
+.si-social-share-wrap {
+  transform: translateY(-50%);
+  top: 50%;
+  right: var(--space-3);
+  position: absolute
+}
+
+.si-social-items {
+  border-radius: var(--full-radius) 0 0 var(--full-radius)
+}
+
+.si-social-icon {
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1/1;
+  border: 0;
+  cursor: pointer
+}
+
+.si-social-icon::before {
+  width: 20px;
+  height: 20px;
+  font: 14px "waf-font-icon"
+}
+
+.si-social-icon [class^=si-icon-] {
+  width: 30px;
+  height: 30px
+}
+
+.si-social-wrap .si-close {
+  width: 30px;
+  height: 30px;
+  border: 0
+}
+
+.si-filter-section {
+  height: 40px
+}
+
+.si-filter-section .si-filter-wrap {
+  position: absolute;
+  overflow-x: auto
+}
+
+.si-filter-section .si-filter-wrap>* {
+  height: 40px
+}
+
+.si-filter-section .si-select-box {
+  cursor: pointer
+}
+
+.si-filter-section .si-date-range {
+  position: relative;
+  cursor: pointer
+}
+
+.si-filter-section .si-date-range label::before {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 18px
+}
+
+.si-filter-section .si-date-range label::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 18px
+}
+
+.si-filter-section .si-date-range input {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  height: 40px;
+  width: 100%
+}
+
+.si-filter-section .si-selected-title::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 18px
+}
+
+.si-filter-section .si-select-box-wrap {
+  width: 200px;
+  border-radius: 8px;
+  z-index: var(--zindex-filter);
+  filter: drop-shadow(1px -1px 8px hsl(var(--hsl-pure-black)/0.25));
+  top: calc(40px + var(--space-4));
+  left: -12px;
+  position: absolute
+}
+
+.si-filter-section .si-select-box-wrap::before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  filter: drop-shadow(1px -1px 8px hsl(var(--hsl-pure-black)/0.25));
+  transform: translate(-50%, 0);
+  top: -10px;
+  left: 50%;
+  position: absolute
+}
+
+.si-filter-section .si-select-list {
+  max-height: 190px;
+  overflow-y: auto
+}
+
+.si-filter-section .si-list-item {
+  min-height: 32px;
+  border: 0;
+  background: rgba(0,0,0,0);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600
+}
+
+.si-filter-section .si-list-item:hover {
+  border-radius: 4px
+}
+
+.si-filter-section.si-filter-active .si-filter-wrap {
+  height: 352px
+}
+
+.si-filter-section .si-selected-title,.si-filter-section .si-date-range label,.si-filter-section .si-btn-calendar,.si-filter-section .add-cal {
+  height: 40px;
+  border: 1px solid var(--light-grey);
+  border-radius: 8px
+}
+
+.si-filter-section .si-date-range label,.si-filter-section .si-sub-title,.si-filter-section .si-btn-text,.si-filter-section .add-cal__text {
+  width: max-content;
+  line-height: 1.4;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-filter-section .si-btn-calendar,.si-filter-section .add-cal {
+  background-color: unset
+}
+
+.si-filter-section .si-btn-calendar::after,.si-filter-section .add-cal::after {
+  font-weight: bold;
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 18px
+}
+
+.si-filter-section.si-stat-filter .si-filter-wrap .si-select-box-wrap {
+  display: grid
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  display: inline-block
+}
+
+.si-fp-today {
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid hsl(var(--hsl-light-grey)/1);
+  cursor: pointer;
+  gap: var(--space-2);
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-fp-today::after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 10px
+}
+
+.si-selected-date {
+  cursor: pointer
+}
+
+.flatpickr-calendar .si-event-date {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  bottom: 3px;
+  left: calc(50% - 1.5px);
+  display: block
+}
+
+.si-stat-filter {
+  border-radius: 16px 16px 0 0;
+  z-index: var(--zindex-filter-stats);
+  flex-direction: column;
+  height: 85px;
+  transition: .5s;
+  bottom: 0;
+  left: 0;
+  position: fixed
+}
+
+.si-stat-filter.si-active-open {
+  height: calc(100% - 110px)
+}
+
+.si-stat-filter .si-btn-stat {
+  border-radius: 16px 16px 0 0;
+  background: rgba(0,0,0,0);
+  border: 0;
+  width: 120px
+}
+
+.si-stat-filter .si-btn-stat .si-btn-text {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 4
+}
+
+.si-stat-filter .si-btn-stat .si-btn-text:before {
+  content: "";
+  transform: translateX(-50%);
+  font-family: "waf-font-icon";
+  font-size: 14px;
+  line-height: 2;
+  bottom: var(--space-8);
+  left: 50%;
+  position: absolute
+}
+
+.si-stat-filter .si-filter-wrap {
+  position: unset;
+  width: calc(100% - var(--space-8));
+  border-radius: 16px 16px 0 0;
+  flex-direction: column;
+  padding-inline:6px}
+
+.si-stat-filter .si-filter-wrap .si-sub-title {
+  padding-left: 10px
+}
+
+.si-stat-filter .si-filter-wrap .si-sub-title,.si-stat-filter .si-filter-wrap .si-title,.si-stat-filter .si-filter-wrap .si-count {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px
+}
+
+.si-stat-filter .si-filter-wrap .si-count:after {
+  content: "";
+  font-family: "waf-font-icon";
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  top: 50%;
+  right: var(--space-3);
+  position: absolute
+}
+
+.si-stat-filter .si-filter-wrap .si-title {
+  padding-right: 10px
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box {
+  height: unset
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box:after {
+  content: "";
+  height: 1px;
+  bottom: var(--space-4-neg)
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box.si-active .si-count:after {
+  content: ""
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box.si-active .si-select-box-wrap {
+  grid-template-rows: 1fr
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box-wrap {
+  border-radius: 0;
+  filter: unset;
+  list-style: none;
+  position: unset;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .5s ease-out
+}
+
+.si-stat-filter .si-filter-wrap .si-select-box-wrap:before {
+  content: unset
+}
+
+.si-stat-filter .si-filter-wrap .si-select-list {
+  list-style: none;
+  max-height: unset
+}
+
+.si-stat-filter .si-filter-wrap .si-list-item {
+  height: 34px;
+  padding-inline:10px}
+
+.si-stat-filter .si-filter-wrap .si-list-item .si-item-text {
+  border: 0;
+  background: rgba(0,0,0,0);
+  padding: 0;
+  text-decoration: none
+}
+
+.si-stat-filter .si-filter-wrap .si-list-item .si-text {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px
+}
+
+.si-stat-filter .si-filter-wrap .si-list-item:not(.si-item-active):hover {
+  border-radius: 4px;
+  background: unset
+}
+
+.si-stat-filter .si-filter-wrap .si-list-item:not(.si-item-active):hover .si-text {
+  color: unset
+}
+
+.si-stat-filter .si-filter-wrap .si-list-item.si-item-active {
+  border-radius: 4px
+}
+
+@media screen and (min-width: 768px) {
+  .si-stat-filter {
+      position:unset;
+      background: rgba(0,0,0,0);
+      height: auto
+  }
+
+  .si-stat-filter .si-btn-stat {
+      display: none
+  }
+
+  .si-stat-filter .si-filter-title {
+      display: flex;
+      color: var(--secondary);
+      margin-top: 0;
+      text-transform: uppercase;
+      border-bottom: 1px solid hsl(var(--hsl-pure-black)/0.2);
+      padding-bottom: var(--space-6);
+      margin-bottom: var(--space-6);
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 2
+  }
+
+  .si-stat-filter .si-filter-wrap {
+      margin-inline:0;padding: 0;
+      width: 100%
+  }
+
+  .si-stat-filter .si-filter-wrap .si-sub-title {
+      padding-left: 0
+  }
+
+  .si-stat-filter .si-filter-wrap .si-list-item {
+      padding-inline:0}
+
+  .si-stat-filter .si-filter-wrap .si-list-item:hover {
+      padding-inline:var(--space-0)}
+
+  .si-stat-filter .si-filter-wrap .si-list-item.si-item-active {
+      padding-inline: var(--space-2)
+  }
+
+  .si-stat-filter .si-filter-wrap .si-select-box.si-active .si-select-list {
+      padding-top: var(--space-3)
+  }
+}
+
+.si-shimmer.si-scorestrip .si-match-details {
+  height: 32px
+}
+
+.si-shimmer.si-scorestrip .si-team-logo {
+  border: none;
+  object-position: 100px;
+  overflow: hidden
+}
+
+.si-shimmer.si-scorestrip .si-btn-site {
+  border-radius: 30px;
+  height: 37px;
+  border: 0
+}
+
+.si-shimmer.si-scorestrip .si-card-footer .si-btn-site {
+  border: 0
+}
+
+.si-shimmer.si-standings .si-table-data.si-player .si-logo {
+  border: 0
+}
+
+.si-shimmer.si-standings .si-table-data .si-player-name .si-name {
+  font-size: 0
+}
+
+.si-shimmer.si-standings .si-table-title {
+  height: 20px
+}
+
+.si-shimmer.si-standings .si-table .si-text,.si-shimmer.si-standings .si-table .si-range {
+  height: 20px
+}
+
+.si-shimmer.si-standings .si-logo {
+  object-position: 100px;
+  overflow: hidden;
+  border: 0
+}
+
+.si-shimmer.si-standings .si-player-name {
+  width: 120px;
+  height: 20px
+}
+
+.si-shimmer.si-standings .si-btn-site {
+  width: 130px
+}
+
+.si-shimmer.si-fixtures .si-card-head {
+  height: 50px
+}
+
+.si-shimmer.si-fixtures .si-card-label {
+  width: 70px;
+  height: 20px
+}
+
+.si-shimmer.si-fixtures .si-card-result {
+  display: block;
+  height: 15px
+}
+
+.si-shimmer.si-fixtures .si-team-score-wrap {
+  width: 70px;
+  height: 20px
+}
+
+.si-shimmer.si-fixtures .si-team-logo {
+  object-position: 100px;
+  overflow: hidden;
+  border: 0
+}
+
+.si-shimmer.si-fixtures .si-team-name {
+  width: 130px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-pos .si-text {
+  width: 16px;
+  height: 16px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-matches .si-text,.si-shimmer.si-raking-detail .si-table-body .si-pts .si-text {
+  font-size: 0
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-range {
+  width: 15px;
+  height: 15px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-table-data.si-team .si-team-logo {
+  border: 0
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-logo {
+  object-position: 100px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-player .si-player-name {
+  width: 100px;
+  height: 20px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-rating .si-text {
+  width: 16px;
+  height: 16px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-player-image::before {
+  content: unset
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-player .si-player-name {
+  height: 45px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-table-data.si-player .si-image {
+  object-position: 1000px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-sname {
+  width: 45px;
+  height: 33px
+}
+
+.si-shimmer.si-raking-detail .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-info .si-player-image::before {
+  content: unset
+}
+
+.si-shimmer.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-best .si-text {
+  font-size: 0
+}
+
+.si-shimmer.si-team-ranking .si-table-body .si-team-name {
+  width: 25px;
+  height: 20px
+}
+
+.si-shimmer.si-team-ranking .si-table-body .si-matches .si-text {
+  width: 25px;
+  height: 20px
+}
+
+.si-shimmer.si-team-ranking .si-table-body .si-pts .si-text {
+  width: 50px;
+  height: 20px
+}
+
+@media screen and (min-width: 768px) {
+  .si-shimmer.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-fname {
+      font-size:0;
+      width: auto;
+      height: auto;
+      border-radius: none;
+      -webkit-animation: si-loading 2s linear 0s infinite normal forwards;
+      animation: si-loading 2s linear 0s infinite normal forwards;
+      background-image: var(--shimmer-light-color);
+      background: -webkit-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -moz-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -ms-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -o-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background-repeat: no-repeat;
+      background-size: 800px 100%;
+      background-color: var(--shimmer-light-color)
+  }
+
+  .si-shimmer.si-raking-detail.si-player-ranking .si-table-data.si-team .si-fname {
+      font-size: 0;
+      width: 30px;
+      height: 20px;
+      border-radius: none;
+      -webkit-animation: si-loading 2s linear 0s infinite normal forwards;
+      animation: si-loading 2s linear 0s infinite normal forwards;
+      background-image: var(--shimmer-light-color);
+      background: -webkit-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -moz-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -ms-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -o-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background-repeat: no-repeat;
+      background-size: 800px 100%;
+      background-color: var(--shimmer-light-color)
+  }
+
+  .si-shimmer.si-raking-detail.si-player-ranking .si-table-body .si-table-data.si-best .si-text {
+      font-size: 0;
+      width: 190px;
+      height: 20px;
+      border-radius: none;
+      -webkit-animation: si-loading 2s linear 0s infinite normal forwards;
+      animation: si-loading 2s linear 0s infinite normal forwards;
+      background-image: var(--shimmer-light-color);
+      background: -webkit-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -moz-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -ms-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: -o-linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background: linear-gradient(to right, var(--shimmer-light-color) 0%, var(--shimmer-dark-color) 20%, var(--shimmer-light-color) 40%, var(--shimmer-light-color) 100%);
+      background-repeat: no-repeat;
+      background-size: 800px 100%;
+      background-color: var(--shimmer-light-color)
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .si-shimmer.si-fixtures .si-card-item {
+      justify-content:space-between
+  }
+
+  .si-shimmer.si-fixtures .si-card-item.upcoming .si-card-body .si-card-label {
+      font-size: 0
+  }
+
+  .si-shimmer.si-fixtures .si-card-head,.si-shimmer.si-fixtures .si-card-body,.si-shimmer.si-fixtures .si-card-footer {
+      flex: 0 0 25%
+  }
+
+  .si-shimmer.si-raking-detail .si-table-data .si-text {
+      font-size: 0
+  }
+}
+
+.si-scorestrip .si-head {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.si-scorestrip .si-title {
+  letter-spacing: -0.32px;
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-social-share {
+  position: absolute;
+  inset-block: 0;
+  margin-block:auto;right: 0
+}
+
+.si-scorestrip .si-social-share-wrap {
+  right: 0
+}
+
+.si-scorestrip .si-share-icon {
+  display: flex
+}
+
+.si-scorestrip .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  transition: all .3s ease-in
+}
+
+.si-scorestrip .swiper-pagination-bullet:hover {
+  cursor: pointer
+}
+
+.si-scorestrip .swiper-pagination-bullet-active {
+  width: 32px;
+  height: 4px
+}
+
+.si-scorestrip .si-card-list {
+  display: flex
+}
+
+.si-scorestrip .si-card-list>.si-loadmore-wrap {
+  height: auto;
+  width: unset
+}
+
+.si-scorestrip .si-card-item {
+  flex-shrink: 0;
+  margin-right: 24px;
+  width: calc(88% - 24px)
+}
+
+.si-scorestrip .si-card-section {
+  width: 100%;
+  overflow-x: auto
+}
+
+.si-scorestrip .si-card-head {
+  height: 36px
+}
+
+.si-scorestrip .si-card-text {
+  min-height: 34px;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-card-label {
+  height: 100%;
+  font-size: 12px;
+  font-weight: 800;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center
+}
+
+.si-scorestrip .si-card-footer {
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+.si-scorestrip .si-card-footer .si-btn-site {
+  text-decoration: none;
+  border: 1px solid var(--light-grey);
+  width: 100%;
+  height: 34px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-card-footer .si-btn-site::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px;
+  font-size: 10px
+}
+
+.si-scorestrip .si-match-status {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  font-size: 12px;
+  line-height: 16px;
+  height: 32px;
+  text-transform: none;
+  font-weight: 600;
+  text-transform: none
+}
+
+.si-scorestrip .si-match-status em {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+
+.si-scorestrip .si-team-wrapper {
+  border-top: 1px solid hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-scorestrip .si-team.active .si-team-name::after {
+  padding-left: var(--space-1);
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px;
+  font-size: 12px
+}
+
+.si-scorestrip .si-team-info {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center
+}
+
+.si-scorestrip .si-team-data-wrap {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: end
+}
+
+.si-scorestrip .si-team-logo {
+  width: 30px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2)
+}
+
+.si-scorestrip .si-team-name {
+  margin: 0;
+  font-size: 14px
+}
+
+.si-scorestrip .si-head-wrap {
+  width: 80%;
+  display: flex;
+  flex-direction: column
+}
+
+.si-scorestrip .si-matchinfo {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  font-size: 12px;
+  line-height: 16px;
+  height: 32px;
+  text-transform: none;
+  font-weight: 600;
+  text-transform: none
+}
+
+.si-scorestrip .si-match-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end
+}
+
+.si-scorestrip .si-format {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 12px
+}
+
+.si-scorestrip .si-text {
+  font-size: 8px;
+  font-weight: 800
+}
+
+.si-scorestrip .live .si-text::before {
+  content: "";
+  background: url("/static-assets/images/live.svg?v=1.8");
+  width: 20px;
+  height: 20px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  position: absolute;
+  right: 25px
+}
+
+.si-scorestrip .si-date {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-fname {
+  display: none
+}
+
+.si-scorestrip .si-sname {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-loadmore-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+
+.si-scorestrip .si-loadmore-wrap::before {
+  content: "";
+  border-left: 1px solid var(--light-grey);
+  height: 90px;
+  position: absolute;
+  left: 0
+}
+
+.si-scorestrip .si-load-more {
+  border: 1px solid var(--light-grey);
+  border-radius: 30px;
+  width: 173px;
+  height: 46px;
+  text-decoration: none;
+  box-shadow: 0px 2px 12px 0px hsl(var(--hsl-pure-black)/0.14);
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-scorestrip .si-load-more::after {
+  content: "";
+  margin-left: 8px;
+  font-size: 12px;
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px
+}
+
+.si-scorestrip .si-team-score {
+  text-transform: none
+}
+
+.si-scorestrip.si-theme {
+  color: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .si-date,.si-scorestrip.si-theme .si-matchinfo,.si-scorestrip.si-theme .si-match-status,.si-scorestrip.si-theme .si-btn-text,.si-scorestrip.si-theme .si-name,.si-scorestrip.si-theme .si-team-score,.si-scorestrip.si-theme .si-team-extra {
+  color: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .si-team-wrapper {
+  border-top: 1px solid hsl(var(--hsl-pure-white)/0.5)
+}
+
+.si-scorestrip.si-theme .si-team-wrapper .si-card-label {
+  color: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .si-match-details .si-text {
+  color: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .si-load-more {
+  background: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .si-btn-site::after {
+  color: var(--pure-white)
+}
+
+.si-scorestrip.si-theme .live .si-text::before {
+  pointer-events: none;
+  background: url("/static-assets/images/live-white.svg?v=1.8")
+}
+
+.si-scorestrip .swiper-vertical .si-card-item {
+  padding-right: var(--space-2)
+}
+
+.si-scorestrip-widget {
+  border: 1px solid var(--light-grey);
+  border-radius: 14px;
+  filter: drop-shadow(0px 0px 20px hsl(var(--hsl-pure-black)/0.1));
+  overflow-x: hidden
+}
+
+.si-scorestrip-widget .swiper-button-prev,.si-scorestrip-widget .swiper-button-next {
+  display: none
+}
+
+.si-scorestrip-widget .si-card-section {
+  overflow-x: unset
+}
+
+.si-scorestrip-widget .si-card-item:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: calc(100% - 42px);
+  top: 0;
+  right: -17px;
+  position: absolute
+}
+
+@media screen and (min-width: 768px) {
+  .si-scorestrip {
+      padding-inline:var(--space-4);
+      margin: 0
+  }
+
+  .si-scorestrip .si-card-section {
+      width: 100%;
+      overflow: hidden;
+      display: flex
+  }
+
+  .si-scorestrip .si-card-item {
+      width: 22.22%;
+      margin-right: 32px
+  }
+
+  .si-scorestrip .si-card-item:last-child {
+      padding-right: 0
+  }
+
+  .si-scorestrip .si-card-list {
+      width: 100%;
+      overflow: unset;
+      gap: unset
+  }
+
+  .si-scorestrip .si-card-text {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-card-footer {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-card-label {
+      font-size: 14px
+  }
+
+  .si-scorestrip .si-date {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-matchinfo {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-format {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-text {
+      font-size: 10px
+  }
+
+  .si-scorestrip .si-sname {
+      font-size: 14px
+  }
+
+  .si-scorestrip .si-team-data {
+      font-size: 14px
+  }
+
+  .si-scorestrip .si-load-more {
+      font-size: 12px
+  }
+
+  .si-scorestrip .si-loadmore-wrap {
+      width: auto
+  }
+
+  .si-scorestrip .swiper-button-prev,.si-scorestrip .swiper-button-next {
+      content: "";
+      width: 45px !important;
+      height: 45px !important;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      border: 1px solid var(--light-grey);
+      box-shadow: 0px 2px 12px 0px hsl(var(--hsl-pure-black)/0.14);
+      z-index: var(--zindex-swiper-button);
+      background-color: var(--pure-white);
+      cursor: pointer;
+      display: flex !important;
+      position: absolute;
+      inset-block: 0;
+      margin-block:auto;display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center
+  }
+
+  .si-scorestrip .swiper-button-prev.swiper-button-disabled,.si-scorestrip .swiper-button-next.swiper-button-disabled {
+      display: none !important
+  }
+
+  .si-scorestrip .swiper-button-prev::before,.si-scorestrip .swiper-button-next::before {
+      color: var(--pure-black)
+  }
+
+  .si-scorestrip .swiper-button-prev::after,.si-scorestrip .swiper-button-next::after {
+      display: none
+  }
+
+  .si-scorestrip .swiper-button-next {
+      right: var(--space-2)
+  }
+
+  .si-scorestrip .swiper-button-next::before {
+      content: "";
+      font-family: "waf-font-icon";
+      content: "";
+      font-size: 14px
+  }
+
+  .si-scorestrip .swiper-button-prev {
+      left: var(--space-2)
+  }
+
+  .si-scorestrip .swiper-button-prev::before {
+      content: "";
+      font-family: "waf-font-icon";
+      content: "";
+      font-size: 14px
+  }
+
+  .si-scorestrip .swiper-vertical .si-card-item {
+      padding-right: var(--space-0)
+  }
+
+  .si-scorestrip-widget .si-head {
+      margin-bottom: var(--space-8)
+  }
+
+  .si-scorestrip-widget .si-title {
+      font-size: 26px;
+      letter-spacing: -0.52px
+  }
+
+  .si-scorestrip-widget .si-body {
+      padding-bottom: var(--space-8);
+      margin-left: var(--space-6)
+  }
+
+  .si-scorestrip-widget .si-card-section {
+      display: block
+  }
+
+  .si-scorestrip-widget .si-card-item:not(:last-child)::after {
+      right: -27px
+  }
+
+  .si-scorestrip-widget .si-social-share {
+      width: unset;
+      height: unset;
+      display: flex;
+      align-items: center
+  }
+
+  .si-scorestrip-widget .si-social-share .si-share-icon {
+      width: unset;
+      height: unset
+  }
+
+  .si-scorestrip-widget .si-social-share .si-icon-b-share::before {
+      font-size: 24px
+  }
+}
+
+.swiper-vertical.si-card-section {
+  height: 100%
+}
+
+.swiper-vertical .si-card-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.swiper-vertical .si-card-list>* {
+  height: auto !important;
+  width: 100%
+}
+
+.swiper-vertical .swiper-button-prev,.swiper-vertical .swiper-button-next {
+  position: absolute;
+  inset-inline: 0;
+  margin-inline:auto;inset-block: unset
+}
+
+.swiper-vertical .swiper-button-prev::before,.swiper-vertical .swiper-button-next::before {
+  content: "";
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px
+}
+
+.swiper-vertical .swiper-button-next {
+  bottom: 0
+}
+
+.swiper-vertical .swiper-button-next::before {
+  content: "";
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px
+}
+
+.si-standings .si-head .si-title {
+  width: 75%;
+  font-size: 22px;
+  font-weight: 800
+}
+
+.si-standings .si-table {
+  border-radius: 8px;
+  border: 2px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-standings .si-table-section.swiper {
+  overflow: hidden;
+  padding-right: 15px;
+  touch-action: pan-y
+}
+
+.si-standings .si-table-section .swiper-pagination {
+  position: unset;
+  transition: 300ms
+}
+
+.si-standings .si-table-section .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  opacity: 1
+}
+
+.si-standings .si-table-section .swiper-pagination .swiper-pagination-bullet-active {
+  width: 32px;
+  height: 4px
+}
+
+.si-standings .si-table-head {
+  height: 44px
+}
+
+.si-standings .si-table-head:after {
+  content: "";
+  height: 3px
+}
+
+.si-standings .si-table-footer {
+  height: 34px
+}
+
+.si-standings .si-table-footer .si-btn-site {
+  text-decoration: none
+}
+
+.si-standings .si-table-footer .si-btn-site:after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 8px;
+  font-weight: 800
+}
+
+.si-standings .si-table-footer .si-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-standings .si-table-row {
+  height: 48px
+}
+
+.si-standings .si-table-row:after {
+  content: "";
+  height: 1px
+}
+
+.si-standings .si-table-data .si-text {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-standings .si-table-data.si-pos {
+  width: 60px
+}
+
+.si-standings .si-table-data.si-pos::after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  right: var(--space-3);
+  position: absolute
+}
+
+.si-standings .si-table-data.si-pos .si-text {
+  width: 22px
+}
+
+.si-standings .si-table-data.si-points {
+  justify-content: flex-end;
+  width: 50px
+}
+
+.si-standings .si-table-data.si-points.si-fav:before {
+  content: "";
+  width: 15px;
+  height: 13px;
+  pointer-events: none;
+  background: url("/static-assets/images/like.svg?v=1.8") center/contain no-repeat
+}
+
+.si-standings .si-table-data.si-player {
+  width: calc(100% - 110px)
+}
+
+.si-standings .si-table-data.si-player .si-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2)
+}
+
+.si-standings .si-table-data .si-range {
+  width: 20px;
+  flex-direction: row-reverse;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-standings .si-table-data .si-range:before {
+  position: absolute;
+  left: 0;
+  font-family: "waf-font-icon";
+  font-size: 8px
+}
+
+.si-standings .si-table-data .si-range.up:before {
+  content: ""
+}
+
+.si-standings .si-table-data .si-range.down:before {
+  content: ""
+}
+
+.si-standings .si-table-data .si-range.neutral {
+  width: 6px;
+  height: 6px
+}
+
+.si-standings .si-table-data .si-player-name {
+  font-size: 12px
+}
+
+.si-standings .si-table-data .si-player-name-wrap {
+  text-decoration: none
+}
+
+.si-standings .si-table-data .si-player-name .si-name,.si-standings .si-table-data .si-player-name .si-country {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-standings .si-table-data .si-player-name .si-fname {
+  text-transform: capitalize;
+  font-weight: 600
+}
+
+.si-standings .si-table-row:first-child {
+  height: 100px;
+  overflow: hidden
+}
+
+.si-standings .si-table-row:first-child .si-table-data .si-player-name {
+  line-height: 18px
+}
+
+.si-standings .si-table-row:first-child .si-table-data .si-player-name .si-name {
+  font-size: 14px
+}
+
+.si-standings .si-table-row:first-child .si-table-data .si-player-name .si-country {
+  font-size: 16px
+}
+
+.si-standings .si-table-row:first-child::before {
+  content: "";
+  width: 100px;
+  background: url("/static-assets/images/pattern-ball.svg?v=1.8") center/contain no-repeat;
+  pointer-events: none;
+  right: var(--space-6);
+  bottom: var(--space-4-neg);
+  position: absolute
+}
+
+.si-standings .si-table-row:first-child .si-table-data-wrap .si-image {
+  right: var(--space-7);
+  bottom: 0;
+  position: absolute
+}
+
+.si-standings .si-table-row:first-child .si-table-data.si-points.si-fav::before {
+  position: absolute;
+  bottom: var(--space-4)
+}
+
+.si-standings .si-table-title {
+  font-size: 12px;
+  font-weight: 600
+}
+
+.si-standings .si-table-title em {
+  font-style: normal;
+  font-weight: 400
+}
+
+.si-standings.si-team-ranking .si-table-row:first-child::before {
+  display: none
+}
+
+.si-standings.si-team-ranking .si-table-row:first-child .si-table-data.si-points.si-fav::before {
+  position: unset
+}
+
+@media screen and (min-width: 768px) {
+  .si-standings .si-table-title {
+      font-size:14px
+  }
+
+  .si-standings .si-head .si-title {
+      width: 100%;
+      font-size: 38px
+  }
+
+  .si-standings .si-table {
+      width: calc(33.33% - 2*var(--space-4)/3)
+  }
+
+  .si-standings .si-table-section.swiper {
+      padding-right: 0
+  }
+
+  .si-standings .si-table-section .swiper-wrapper {
+      gap: var(--space-4)
+  }
+
+  .si-standings .si-table-section .swiper-pagination {
+      display: none
+  }
+
+  .si-standings.si-integrated-widget {
+      border: 8px solid var(--platinum);
+      border-radius: 10px
+  }
+
+  .si-standings.si-integrated-widget .si-table {
+      width: 100%;
+      border: 0
+  }
+}
+
+* {
+  box-sizing: border-box
+}
+
+.si-fixtures .si-head::before {
+  content: unset;
+  width: 57.22%;
+  aspect-ratio: 103/111;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: var(--zindex-pattern);
+  background: url("/static-assets/images/icc-logo-vector.svg?v=1.8") center/contain no-repeat;
+  pointer-events: none;
+  transform: translate(-50%, -60%)
+}
+
+.si-fixtures .si-title-wrap {
+  margin-bottom: 18px
+}
+
+.si-fixtures .si-title {
+  line-height: 1;
+  font-size: 22px;
+  font-weight: 800
+}
+
+.si-fixtures .si-label {
+  line-height: 14px;
+  font-size: 10px;
+  font-weight: 600
+}
+
+.si-fixtures .si-image {
+  width: 76px;
+  aspect-ratio: 19/6
+}
+
+.si-fixtures .si-tab-card-section .si-title {
+  font-size: 14px;
+  font-weight: 800
+}
+
+.si-fixtures .si-tab-card-section-card-list {
+  z-index: var(--zindex-pattern);
+  isolation: isolate;
+  position: relative
+}
+
+.si-fixtures .si-card-body::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: -20px;
+  left: 0
+}
+
+.si-fixtures .si-card-item {
+  border: 1px solid var(--light-grey)
+}
+
+.si-fixtures .si-card-item.live {
+  border-left: 4px solid hsl(var(--hsl-highlight-red))
+}
+
+.si-fixtures .si-card-item.live .si-card-format-wrap {
+  flex: 0 0 30%;
+  width: 30%
+}
+
+.si-fixtures .si-card-item.live .si-card-info {
+  justify-content: flex-end;
+  flex: 0 0 calc(70% - var(--space-2));
+  width: 70%
+}
+
+.si-fixtures .si-card-item.live .si-card-status {
+  max-width: 50px;
+  height: 20px;
+  flex: 1;
+  font-size: 10px;
+  font-weight: 800;
+  padding-left: 20px
+}
+
+.si-fixtures .si-card-item.live .si-card-status::before {
+  content: "";
+  background: url("/static-assets/images/live-white.svg?v=1.8");
+  width: 14px;
+  height: 14px;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  position: absolute
+}
+
+.si-fixtures .si-card-item.live .si-team-score:nth-of-type(2) {
+  font-size: 12px
+}
+
+.si-fixtures .si-card-item.upcoming .si-card-label {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-fixtures .si-card-item.upcoming .si-card-info {
+  justify-content: flex-end
+}
+
+.si-fixtures .si-card-item.upcoming .si-card-result {
+  margin-top: var(--space-2)
+}
+
+.si-fixtures .si-card-item .si-btn-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-fixtures .si-card-item .si-btn-text::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 10px
+}
+
+.si-fixtures .si-card-format {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 14px;
+  width: max-content
+}
+
+.si-fixtures .si-card-format-wrap,.si-fixtures .si-card-info,.si-fixtures .si-card-venue {
+  flex: 0 0 50%;
+  width: 50%
+}
+
+.si-fixtures .si-card-format-wrap {
+  flex: 0 0 15%;
+  width: 15%
+}
+
+.si-fixtures .si-card-info {
+  text-align: right;
+  flex: 0 0 85%;
+  width: 85%;
+  line-height: 14px
+}
+
+.si-fixtures .si-card-venue {
+  flex: 0 0 100%;
+  width: 100%;
+  line-height: 14px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-fixtures .si-card-date::after {
+  content: "|";
+  margin-inline:5px}
+
+.si-fixtures .si-card-date,.si-fixtures .si-card-match-info {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-fixtures .si-card-result {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  display: inline-block
+}
+
+.si-fixtures .si-card-result em {
+  color: var(--hsl-pure-black);
+  font-weight: 800
+}
+
+.si-fixtures .si-team:not(:nth-of-type(2))::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px
+}
+
+.si-fixtures .si-team-name {
+  line-height: 18px
+}
+
+.si-fixtures .si-team-name .si-name {
+  font-size: 16px;
+  font-weight: 800
+}
+
+.si-fixtures .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2)
+}
+
+.si-fixtures .si-team-score {
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 800
+}
+
+.si-fixtures .si-btn-site {
+  border: 1px solid var(--light-grey);
+  text-decoration: none;
+  flex: 1;
+  height: 40px
+}
+
+.si-fixtures .si-no-data-wrap .si-text {
+  font-size: 14px;
+  font-weight: 600
+}
+
+.si-fixtures .si-searchbar:after {
+  content: "";
+  height: 1px;
+  width: calc(100% - 16px);
+  bottom: var(--space-5-neg);
+  left: var(--space-2);
+  position: absolute
+}
+
+.si-fixtures .si-searchbar .si-input {
+  font-size: 10px;
+  font-weight: 600;
+  height: 37px;
+  border-radius: 30px;
+  border: 1px solid var(--light-grey);
+  outline: 0
+}
+
+.si-fixtures .si-searchbar .btn-search {
+  font-size: 0;
+  border: 0;
+  width: 20px;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  right: var(--space-5);
+  position: absolute
+}
+
+.si-fixtures .si-searchbar .btn-search::after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 12px
+}
+
+.si-fixtures .si-filter-section .si-filter-wrap {
+  overflow-y: clip
+}
+
+.si-fixtures .si-filter-section .si-select-box {
+  min-width: 120px
+}
+
+.si-fixtures .si-filter-section .si-selected-title {
+  justify-content: space-between
+}
+
+.si-fixtures .si-filter-section .si-date-range input {
+  height: 40px !important;
+  width: 100% !important
+}
+
+@media screen and (min-width: 768px) {
+  .si-fixtures .si-filter-section .si-filter-wrap {
+      overflow-y:unset
+  }
+
+  .si-filter-section .si-filter-wrap {
+      position: unset;
+      overflow-x: unset;
+      height: unset
+  }
+
+  .si-filter-section.si-filter-active .si-filter-wrap {
+      height: unset
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .si-fixtures .si-card-head {
+      padding-right:5%;
+      align-items: unset;
+      line-height: 2.2;
+      position: relative;
+      flex-direction: column;
+      justify-content: unset;
+      flex: 0 0 35%;
+      margin-bottom: 0
+  }
+
+  .si-fixtures .si-card-info {
+      margin-block:var(--space-2);line-height: 16px;
+      text-align: left;
+      justify-content: unset
+  }
+
+  .si-fixtures .si-card-date,.si-fixtures .si-card-match-info {
+      font-size: 14px
+  }
+
+  .si-fixtures .si-card-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center
+  }
+
+  .si-fixtures .si-card-body {
+      position: relative;
+      flex: 0 0 35%
+  }
+
+  .si-fixtures .si-card-body::after {
+      content: "";
+      height: 1px;
+      position: absolute;
+      width: 15%;
+      top: 0;
+      left: -60px;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(90deg);
+      background-color: hsl(var(--hsl-pure-black)/0.1)
+  }
+
+  .si-fixtures .si-card-body::before {
+      content: "";
+      height: 1px;
+      position: absolute;
+      width: 15%;
+      top: 0;
+      right: -70px;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(90deg);
+      background-color: hsl(var(--hsl-pure-black)/0.1)
+  }
+
+  .si-fixtures .si-card-footer {
+      flex: 0 0 30%;
+      margin-top: 0;
+      flex-direction: column
+  }
+
+  .si-fixtures .si-card-format-wrap {
+      width: unset;
+      flex: 0
+  }
+
+  .si-fixtures .si-card-item.live .si-team-score:nth-of-type(2) {
+      font-size: 16px
+  }
+
+  .si-fixtures .si-card-item.live .si-card-info,.si-fixtures .si-card-item.upcoming .si-card-info {
+      justify-content: unset;
+      flex: 0
+  }
+
+  .si-fixtures .si-card-item.upcoming .si-card-body .si-card-label {
+      font-size: 14px
+  }
+
+  .si-fixtures .si-card-item.upcoming .si-card-body .si-team {
+      margin-block:0}
+
+  .si-fixtures .si-card-venue {
+      margin-top: 0;
+      text-align: left;
+      line-height: 18px;
+      justify-content: flex-start;
+      flex: 0
+  }
+
+  .si-fixtures .si-team {
+      gap: var(--space-2)
+  }
+
+  .si-fixtures .si-team-name .si-name {
+      font-size: 22px
+  }
+
+  .si-fixtures .si-team-score {
+      font-size: 16px
+  }
+
+  .si-fixtures .si-btn-site {
+      flex: unset;
+      height: 40px;
+      min-width: 180px;
+      width: fit-content;
+      margin-left: auto
+  }
+
+  .si-fixtures .si-tab-card-section .si-title {
+      font-size: 16px
+  }
+}
+
+.si-raking-detail .si-head .si-title {
+  font-size: 22px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-head .si-desc {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-raking-detail .si-tab-section {
+  border-bottom: 1px solid hsl(var(--hsl-pure-black)/0.1);
+  overflow-x: auto
+}
+
+.si-raking-detail .si-tab-section .si-tab-anchor {
+  text-decoration: none
+}
+
+.si-raking-detail .si-filter-section {
+  height: auto;
+  flex-direction: column;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2)
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap {
+  position: unset;
+  overflow: unset
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-selected-title {
+  border-radius: 30px;
+  justify-content: space-between
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-selected-title::after {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link {
+  width: 150px;
+  border-radius: 30px;
+  border: 0
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link:after {
+  content: "";
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "waf-font-icon"
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link.si-disabled {
+  background-color: hsl(var(--hsl-primary)/0.3)
+}
+
+.si-raking-detail .si-filter-section .si-filter-wrap .si-btn-link.si-btn-reset {
+  border: 1px solid hsl(var(--hsl-light-grey)/10)
+}
+
+.si-raking-detail .si-filter-section .si-filter-title {
+  font-size: 14px;
+  font-weight: 400
+}
+
+.si-raking-detail .si-filter-section .si-select-box-wrap {
+  left: 0
+}
+
+.si-raking-detail .si-table-head {
+  border-radius: var(--half-radius) var(--half-radius) 0 0
+}
+
+.si-raking-detail .si-table-footer .si-btn-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-table-footer .si-btn-site {
+  border: 1px solid hsl(var(--hsl-light-grey)/1);
+  height: 45px;
+  border-radius: 30px
+}
+
+.si-raking-detail .si-table-footer .si-btn-site:after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-table-head {
+  height: 44px
+}
+
+.si-raking-detail .si-table-head:after {
+  content: "";
+  height: 3px
+}
+
+.si-raking-detail .si-table-head .si-table-data.si-pos::after {
+  content: unset
+}
+
+.si-raking-detail .si-table-head .si-table-data .si-text {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-raking-detail .si-table-data.si-pos {
+  width: 70px;
+  justify-content: flex-start
+}
+
+.si-raking-detail .si-table-data.si-pos::after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  right: var(--space-3);
+  position: absolute
+}
+
+.si-raking-detail .si-table-data .si-range {
+  width: 15px;
+  gap: 2px;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-table-data .si-range:before {
+  font-family: "waf-font-icon";
+  font-size: 8px
+}
+
+.si-raking-detail .si-table-data .si-range.up:before {
+  content: ""
+}
+
+.si-raking-detail .si-table-data .si-range.down:before {
+  content: ""
+}
+
+.si-raking-detail .si-table-data .si-range.neutral {
+  width: 6px;
+  height: 6px
+}
+
+.si-raking-detail .si-table-data.si-team {
+  width: 100px;
+  justify-content: flex-start
+}
+
+.si-raking-detail .si-table-data.si-team .si-logo {
+  object-fit: cover
+}
+
+.si-raking-detail .si-table-data.si-team .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-raking-detail .si-table-data.si-rating {
+  width: 60px;
+  justify-content: flex-end
+}
+
+.si-raking-detail .si-table-data.si-rating.si-fav:before {
+  content: "";
+  width: 15px;
+  height: 13px;
+  pointer-events: none;
+  background: url("/static-assets/images/like.svg?v=1.8") center/contain no-repeat
+}
+
+.si-raking-detail .si-table-data.si-pts {
+  width: 60px
+}
+
+.si-raking-detail .si-table-data.si-pts.si-fav:before {
+  content: "";
+  width: 15px;
+  height: 13px;
+  pointer-events: none;
+  background: url("/static-assets/images/like.svg?v=1.8") center/contain no-repeat
+}
+
+.si-raking-detail .si-table-data.si-matches {
+  width: 60px
+}
+
+.si-raking-detail .si-table-data .si-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-raking-detail .si-table-body .si-table-data {
+  height: 48px
+}
+
+.si-raking-detail .si-table-body .si-table-row:after {
+  content: "";
+  height: 1px
+}
+
+.si-raking-detail .si-table-body .si-table-row:first-child .si-table-data {
+  height: 100px
+}
+
+.si-raking-detail .si-table-body .si-table-row:first-child .si-text {
+  font-size: 16px
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-pos {
+  flex: unset
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-team {
+  flex: unset;
+  width: 40px
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-player {
+  justify-content: flex-start;
+  width: calc(100% - 160px)
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-player .si-player-name-wrap {
+  text-decoration: none
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-player .si-fname {
+  font-weight: 600;
+  font-size: 12px
+}
+
+.si-raking-detail.si-player-ranking .si-table-data.si-rating {
+  width: 50px
+}
+
+.si-raking-detail.si-player-ranking .si-table-row {
+  justify-content: flex-start
+}
+
+.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-info {
+  overflow: hidden
+}
+
+.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-image {
+  height: 100px;
+  position: relative
+}
+
+.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-player-image::before {
+  content: "";
+  width: 100px;
+  pointer-events: none;
+  background: url("/static-assets/images/pattern-ball.svg?v=1.8") center/contain no-repeat;
+  right: 0;
+  bottom: var(--space-4-neg);
+  position: absolute
+}
+
+.si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-image {
+  object-fit: contain
+}
+
+.si-raking-detail.si-team-ranking .si-table-row:not(:first-child) .si-table-data.si-team .si-team-name {
+  line-height: 10px
+}
+
+@media screen and (min-width: 768px) {
+  .si-raking-detail .si-tab-section {
+      gap:calc(2*var(--space-12))
+  }
+
+  .si-raking-detail .si-tab-section .si-tabs .si-tab-text {
+      font-size: 14px
+  }
+
+  .si-raking-detail .si-filter-section .si-filter-title {
+      margin-bottom: var(--space-5)
+  }
+
+  .si-raking-detail .si-filter-section .si-filter-wrap {
+      flex-direction: row
+  }
+
+  .si-raking-detail .si-filter-section .si-filter-wrap .si-select-box {
+      width: 160px
+  }
+
+  .si-raking-detail .si-head {
+      margin-bottom: var(--space-8)
+  }
+
+  .si-raking-detail .si-head .si-title {
+      font-size: 38px
+  }
+
+  .si-raking-detail .si-head .si-desc {
+      font-size: 14px
+  }
+
+  .si-raking-detail .si-table-head .si-table-data .si-text {
+      font-size: 14px
+  }
+
+  .si-raking-detail .si-table-body .si-table-row:first-child .si-text {
+      font-size: 24px
+  }
+
+  .si-raking-detail .si-table-data {
+      flex: 1
+  }
+
+  .si-raking-detail .si-table-data .si-text {
+      font-size: 12px
+  }
+
+  .si-raking-detail .si-table-data.si-pos {
+      width: 100px;
+      flex: unset;
+      padding-left: var(--space-6)
+  }
+
+  .si-raking-detail .si-table-data.si-team {
+      padding-left: var(--space-3)
+  }
+
+  .si-raking-detail .si-table-data.si-team .si-sname {
+      display: none
+  }
+
+  .si-raking-detail .si-table-data.si-team .si-fname {
+      display: block
+  }
+
+  .si-raking-detail .si-table-data.si-team .si-team-name {
+      margin-left: var(--space-3)
+  }
+
+  .si-raking-detail .si-table-data.si-rating {
+      padding-right: var(--space-6)
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-team {
+      width: 200px
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-team .si-team-name {
+      display: block
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-team .si-fname {
+      font-size: 10px
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-rating {
+      flex: unset;
+      width: 100px;
+      padding-right: 0;
+      justify-content: center
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-player {
+      width: calc(100% - 400px)
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-best .si-text {
+      font-size: 12px
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-team .si-sname {
+      display: block
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-team .si-fname {
+      display: none
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-fname {
+      font-size: 12px;
+      font-weight: 600
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-body .si-table-row:first-child .si-table-data.si-player .si-sname {
+      line-height: 26px
+  }
+
+  .si-raking-detail.si-team-ranking .si-table-row:not(:first-child) .si-table-data.si-team .si-team-name {
+      line-height: 14px
+  }
+
+  .si-raking-detail.si-team-ranking .si-team-name .si-fname {
+      display: flex
+  }
+
+  .si-raking-detail.si-team-ranking .si-team-name .si-sname {
+      display: none
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .si-raking-detail.si-player-ranking .si-table-data.si-best {
+      width:300px;
+      flex: unset;
+      padding-right: var(--space-5);
+      text-align: right;
+      display: flex;
+      justify-content: flex-end
+  }
+
+  .si-raking-detail.si-player-ranking .si-table-data.si-player {
+      width: calc(100% - 700px)
+  }
+}
+
+.si-player-ranking-list .si-tabs:before {
+  content: "";
+  height: 1px
+}
+
+.si-player-ranking-list .si-tabs .si-tab-name {
+  flex: 1
+}
+
+.si-player-ranking-list .si-card-item {
+  box-shadow: 0px 0px 10px 0px hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-player-ranking-list .si-card-item:after {
+  content: "";
+  width: 288px;
+  height: 288px;
+  opacity: .6;
+  pointer-events: none;
+  background: url("/static-assets/images/pattern-ball.svg?v=1.8") right/cover no-repeat;
+  top: -20px;
+  right: -45px;
+  position: absolute
+}
+
+.si-player-ranking-list .si-title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px
+}
+
+.si-player-ranking-list .si-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px
+}
+
+.si-player-ranking-list .si-number {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 24px;
+  width: 60px
+}
+
+.si-player-ranking-list .si-number:after {
+  content: "";
+  left: 0;
+  width: 1px;
+  height: calc(100% + 20px)
+}
+
+.si-player-ranking-detail .si-card-item:after {
+  content: "";
+  width: 100%;
+  height: 420px;
+  opacity: .6;
+  pointer-events: none;
+  background: url("/static-assets/images/pattern-ball.svg?v=1.8") center/cover no-repeat;
+  top: 80px;
+  right: 0px;
+  position: absolute
+}
+
+.si-player-ranking-detail .si-card-head {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.si-player-ranking-detail .si-card-content {
+  height: 50px
+}
+
+.si-player-ranking-detail .si-card-content:not(:last-child)::after {
+  content: "";
+  height: 1px
+}
+
+.si-player-ranking-detail .si-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px
+}
+
+.si-player-ranking-detail .si-label,.si-player-ranking-detail .si-number {
+  font-weight: 800
+}
+
+.si-player-ranking-detail .si-label {
+  font-size: 12px;
+  line-height: 16px
+}
+
+.si-player-ranking-detail .si-number {
+  font-size: 16px;
+  line-height: 22px
+}
+
+.si-player-ranking-detail .si-text {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px
+}
+
+.si-player-ranking-detail .si-social-share {
+  margin-left: auto
+}
+
+.si-player-ranking-detail .si-social-share-wrap {
+  right: 0;
+  top: 0;
+  transform: unset
+}
+
+.si-player-ranking-form .si-card {
+  overflow: hidden
+}
+
+.si-player-ranking-form .si-card:after {
+  content: "";
+  width: 100%;
+  height: 420px;
+  opacity: .4;
+  pointer-events: none;
+  background: url("/static-assets/images/pattern-ball.svg?v=1.8") center/cover no-repeat;
+  top: 80px;
+  right: 0px;
+  position: absolute
+}
+
+.si-player-ranking-form .si-card-item {
+  flex-wrap: wrap;
+  row-gap: var(--space-1)
+}
+
+.si-player-ranking-form .si-card-item:not(:last-child)::after {
+  content: "";
+  height: 1px
+}
+
+.si-player-ranking-form .si-text {
+  font-size: 14px;
+  font-weight: 400
+}
+
+.si-player-ranking-form .si-text.si-team {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800
+}
+
+.si-player-ranking-form .si-text.si-number {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800
+}
+
+.si-player-ranking-list .si-card-item,.si-player-ranking-detail .si-card-item {
+  border-radius: 14px;
+  border: 1px solid var(--light-grey);
+  overflow: hidden
+}
+
+.si-player-ranking-graph .si-card,.si-player-ranking-form .si-card {
+  border-radius: 14px;
+  border: 1px solid var(--light-grey)
+}
+
+.si-player-ranking-graph .si-card-head,.si-player-ranking-form .si-card-head {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px
+}
+
+.si-player-ranking-graph .si-social-share,.si-player-ranking-form .si-social-share {
+  margin-left: auto
+}
+
+.si-player-ranking-graph .si-social-share-wrap,.si-player-ranking-form .si-social-share-wrap {
+  right: 0;
+  top: 0;
+  transform: unset
+}
+
+.si-player-ranking-graph .si-no-data-wrap .si-text,.si-player-ranking-form .si-no-data-wrap .si-text {
+  border-radius: var(--space-4);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-player-ranking-list.si-theme .si-card-item::after {
+  content: unset
+}
+
+.si-player-ranking-detail.si-theme .si-card-head {
+  border-bottom: 1px solid hsl(var(--hsl-pure-white)/0.2)
+}
+
+.si-player-ranking-detail.si-theme .si-card-item::after {
+  content: unset
+}
+
+.si-player-ranking-graph.si-theme .si-card-head {
+  border-bottom: 1px solid hsl(var(--hsl-pure-white)/0.2)
+}
+
+.si-player-ranking-graph.si-theme .apexcharts-active .apexcharts-tooltip-title,.si-player-ranking-graph.si-theme .apexcharts-active .apexcharts-tooltip-text {
+  color: var(--pure-black)
+}
+
+.si-player-ranking-graph.si-theme text {
+  fill: var(--pure-white)
+}
+
+.si-player-ranking-graph .apexcharts-tooltip {
+  background: #c9003e !important;
+  color: #fff
+}
+
+.si-player-ranking-graph .apexcharts-tooltip-series-group {
+  padding: 0 8px 0 5px !important
+}
+
+.si-player-ranking-graph .apexcharts-tooltip-y-group {
+  padding: 2px 0 1px !important
+}
+
+.si-player-ranking-form.si-theme .si-card-head {
+  border-bottom: 1px solid hsl(var(--hsl-pure-white)/0.2)
+}
+
+.si-player-ranking-form.si-theme .si-card::after {
+  content: unset
+}
+
+@media screen and (min-width: 768px) {
+  .si-player-ranking-list .si-tabs {
+      gap:var(--space-5)
+  }
+
+  .si-player-ranking-list .si-tabs .si-tab-name {
+      flex: unset;
+      width: 60px
+  }
+
+  .si-player-ranking-list .si-tabs .si-tab-anchor {
+      height: 35px
+  }
+
+  .si-player-ranking-list .si-tabs .si-tab-anchor .si-tab-text {
+      font-size: 14px
+  }
+
+  .si-player-ranking-list .si-card-item {
+      flex: 1;
+      padding-inline:var(--space-4);padding-block: var(--space-5)
+  }
+
+  .si-player-ranking-list .si-title {
+      font-size: 22px;
+      line-height: 26px
+  }
+
+  .si-player-ranking-list .si-text {
+      font-size: 16px;
+      line-height: 22px
+  }
+
+  .si-player-ranking-list .si-number {
+      font-size: 30px;
+      line-height: 38px;
+      width: max-content
+  }
+
+  .si-player-ranking-list .si-number:after {
+      left: var(--space-2-neg);
+      height: calc(100% + 10px)
+  }
+
+  .si-player-ranking-detail .si-card-item {
+      flex: 1;
+      padding-bottom: var(--space-6)
+  }
+
+  .si-player-ranking-detail .si-card-item::after {
+      width: 420px;
+      right: -190px
+  }
+
+  .si-player-ranking-detail .si-card-title {
+      font-size: 26px;
+      line-height: 30px
+  }
+
+  .si-player-ranking-detail .si-card-content {
+      height: 52px
+  }
+
+  .si-player-ranking-detail .si-text {
+      font-size: 12px;
+      line-height: 16px
+  }
+
+  .si-player-ranking-detail .si-label {
+      font-size: 14px;
+      line-height: 18px
+  }
+
+  .si-player-ranking-detail .si-number {
+      padding-right: 0;
+      font-size: 18px;
+      line-height: 24px
+  }
+
+  .si-player-ranking-detail .si-social-share {
+      position: relative;
+      right: var(--space-3)
+  }
+
+  .si-player-ranking-detail .si-social-share .si-icon-b-share::before {
+      font-size: 20px
+  }
+
+  .si-player-ranking-form .si-card::after {
+      content: "";
+      height: 100%;
+      top: 50px;
+      right: 0;
+      pointer-events: none;
+      background: url("/static-assets/images/pattern-ball.svg?v=1.8");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: top center
+  }
+
+  .si-player-ranking-form .si-card-item {
+      gap: var(--space-4);
+      flex-wrap: nowrap
+  }
+
+  .si-player-ranking-form .si-text {
+      font-size: 16px;
+      flex: 1
+  }
+
+  .si-player-ranking-form .si-text.si-date {
+      width: 10%;
+      flex: unset
+  }
+
+  .si-player-ranking-form .si-text.si-desc {
+      width: 30%;
+      flex: unset
+  }
+
+  .si-player-ranking-form .si-text.si-team {
+      text-align: right
+  }
+
+  .si-player-ranking-form .si-text.si-number {
+      text-align: right
+  }
+
+  .si-player-ranking-form .si-text.si-name {
+      text-align: right
+  }
+
+  .si-player-ranking-list,.si-player-ranking-detail {
+      margin-bottom: var(--space-10);
+      margin-right: var(--space-4)
+  }
+
+  .si-player-ranking-list .si-card-list,.si-player-ranking-detail .si-card-list {
+      gap: var(--space-6);
+      flex-direction: row
+  }
+
+  .si-player-ranking-list .si-card-item,.si-player-ranking-detail .si-card-item {
+      flex: 1
+  }
+
+  .si-player-ranking-graph,.si-player-ranking-form {
+      margin-bottom: var(--space-10);
+      margin-right: var(--space-4)
+  }
+
+  .si-player-ranking-graph .si-card,.si-player-ranking-form .si-card {
+      flex: 1;
+      padding-bottom: var(--space-6)
+  }
+
+  .si-player-ranking-graph .si-card-title,.si-player-ranking-form .si-card-title {
+      font-size: 26px;
+      line-height: 30px
+  }
+
+  .si-player-ranking-graph .si-social-share,.si-player-ranking-form .si-social-share {
+      position: relative;
+      right: var(--space-3)
+  }
+
+  .si-player-ranking-graph .si-social-share .si-icon-b-share::before,.si-player-ranking-form .si-social-share .si-icon-b-share::before {
+      font-size: 20px
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .si-player-ranking-list .si-card-item {
+      padding-inline:var(--space-9);
+      padding-block:var(--space-6)}
+
+  .si-player-ranking-list .si-card-item::after {
+      width:320px;
+      height: 320px
+  }
+
+  .si-player-ranking-list .si-title {
+      font-size: 24px;
+      line-height: 28px
+  }
+
+  .si-player-ranking-list .si-number {
+      font-size: 38px;
+      line-height: 44px;
+      width: max-content
+  }
+
+  .si-player-ranking-list .si-number:after {
+      left: var(--space-4-neg);
+      height: calc(100% + 10px)
+  }
+}
+
+.si-standings-page .si-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4
+}
+
+.si-standings-page .si-title:not(.si-no-groups)::after {
+  content: ""
+}
+
+.si-standings-page .si-tabs {
+  height: 50px;
+  overflow-x: auto
+}
+
+.si-standings-page .si-tab-anchor::before {
+  content: unset
+}
+
+.si-standings-page .si-tab-name.si-active .si-tab-anchor::before {
+  content: unset
+}
+
+.si-standings-page .si-tab-name.si-active .si-tab-anchor {
+  border-bottom: 3px solid var(--primary)
+}
+
+.si-standings-page .si-tab-text {
+  width: max-content;
+  font-size: 10px
+}
+
+.si-standings-page .si-table-title {
+  letter-spacing: -0.44px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-standings-page .si-table-row {
+  height: 48px
+}
+
+.si-standings-page .si-table-body .si-data {
+  font-weight: 400
+}
+
+.si-standings-page .si-table-body .si-table-row {
+  border-bottom: 1px solid hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-standings-page .si-table-body .si-highlight {
+  border-bottom: 1px solid var(--frostbite)
+}
+
+.si-standings-page .si-data {
+  font-size: 14px;
+  font-weight: 800
+}
+
+.si-standings-page .si-position {
+  width: 16%
+}
+
+.si-standings-page .si-team {
+  width: 31%;
+  text-align: left
+}
+
+.si-standings-page .si-play {
+  width: 19%
+}
+
+.si-standings-page .si-nrr {
+  width: 24%
+}
+
+.si-standings-page .si-points {
+  width: 10%
+}
+
+.si-standings-page .si-team-name .si-data {
+  font-weight: 800
+}
+
+.si-standings-page .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.1)
+}
+
+.si-standings-page .si-qualify .si-data::before {
+  content: "Q";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  line-height: 1;
+  transform: translate(calc(-100% + var(--space-2-neg)), -50%)
+}
+
+.si-standings-page .si-loadmore {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-standings-page .si-loadmore::after {
+  content: "";
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 10px
+}
+
+.si-standings-page .si-no-data-text .si-text {
+  font-style: italic
+}
+
+.si-standings-page .si-standing-points .si-standing-points-title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-standings-page .si-standing-points .si-standing-points-list {
+  padding-left: var(--space-5)
+}
+
+.si-standings-page .si-standing-points .si-standing-points-list .si-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4
+}
+
+.si-standings-page .si-standing-points .si-standing-points-list .si-text .si-highlight {
+  font-weight: 800
+}
+
+.si-standings-page.si-integrated-widget {
+  pointer-events: all;
+  border: 2px solid var(--platinum);
+  border-radius: 8px
+}
+
+.si-standings-page.si-integrated-widget .si-wrapper {
+  padding: 0
+}
+
+.si-standings-page.si-integrated-widget .si-head {
+  gap: var(--space-4)
+}
+
+.si-standings-page.si-integrated-widget .si-tabs {
+  height: auto;
+  gap: var(--space-4);
+  padding-bottom: var(--space-1)
+}
+
+.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar {
+  width: 8px;
+  height: 4px
+}
+
+.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar-track {
+  background: hsl(var(--hsl-dark-grey)/1);
+  border-radius: var(--half-radius)
+}
+
+.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar-thumb {
+  border-radius: var(--half-radius);
+  background: var(--light-grey)
+}
+
+.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar-thumb:hover {
+  border-radius: var(--half-radius);
+  background: var(--pure-black)
+}
+
+.si-standings-page.si-integrated-widget .si-tabs::-webkit-scrollbar {
+  height: 4px
+}
+
+.si-standings-page.si-integrated-widget .si-tab-anchor {
+  height: 22px
+}
+
+.si-standings-page.si-integrated-widget .si-tab-anchor .si-highlight {
+  color: var(--dark-grey);
+  font-style: normal;
+  font-weight: 800
+}
+
+.si-standings-page.si-integrated-widget .si-tab-name.si-active .si-tab-text {
+  color: var(--primary)
+}
+
+.si-standings-page.si-integrated-widget .si-tab-name.si-active .si-tab-anchor::before {
+  height: 2px;
+  background-color: var(--primary)
+}
+
+.si-standings-page.si-integrated-widget .si-tab-text {
+  font-size: 14px;
+  font-style: normal
+}
+
+.si-standings-page.si-integrated-widget .si-body {
+  padding-bottom: 0
+}
+
+@media screen and (min-width: 768px) {
+  .si-standings-page .si-wrapper {
+      padding-inline:0
+  }
+
+  .si-standings-page .si-body {
+      padding-bottom: var(--space-6)
+  }
+
+  .si-standings-page .si-lname,.si-standings-page .si-won,.si-standings-page .si-lost,.si-standings-page .si-noresult,.si-standings-page .si-draw {
+      display: block
+  }
+
+  .si-standings-page .si-sname {
+      display: none
+  }
+
+  .si-standings-page .si-table {
+      overflow-x: auto
+  }
+
+  .si-standings-page .si-table-title {
+      letter-spacing: -0.76px;
+      font-size: 38px;
+      line-height: 1.2
+  }
+
+  .si-standings-page .si-table-row {
+      height: 55px
+  }
+
+  .si-standings-page .si-play,.si-standings-page .si-won,.si-standings-page .si-lost,.si-standings-page .si-noresult,.si-standings-page .si-draw,.si-standings-page .si-nrr,.si-standings-page .si-points {
+      width: 9.5%
+  }
+
+  .si-standings-page .si-team {
+      width: 28%
+  }
+
+  .si-standings-page .si-team-name {
+      flex-grow: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 1
+  }
+
+  .si-standings-page .si-position {
+      width: 6.5%
+  }
+
+  .si-standings-page .si-data {
+      font-size: 16px
+  }
+
+  .si-standings-page .si-standing-points .si-standing-points-title {
+      font-size: 16px
+  }
+
+  .si-standings-page .si-standing-points .si-standing-points-list .si-text {
+      font-size: 14px
+  }
+
+  .si-standings-page.si-integrated-widget {
+      border: 8px solid var(--platinum);
+      border-radius: 10px
+  }
+
+  .si-standings-page.si-integrated-widget .si-table-head {
+      border-top: 3px solid rgba(0,0,0,0)
+  }
+
+  .si-standings-page.si-integrated-widget .si-table-row {
+      height: 48px
+  }
+
+  .si-standings-page.si-integrated-widget .si-won,.si-standings-page.si-integrated-widget .si-lost,.si-standings-page.si-integrated-widget .si-noresult,.si-standings-page.si-integrated-widget .si-draw {
+      display: none
+  }
+
+  .si-standings-page.si-integrated-widget .si-position {
+      width: 16%
+  }
+
+  .si-standings-page.si-integrated-widget .si-team {
+      width: 31%
+  }
+
+  .si-standings-page.si-integrated-widget .si-play {
+      width: 19%
+  }
+
+  .si-standings-page.si-integrated-widget .si-nrr {
+      width: 24%
+  }
+
+  .si-standings-page.si-integrated-widget .si-points {
+      width: 10%
+  }
+
+  .si-standings-page.si-integrated-widget .si-body {
+      padding-bottom: 0
+  }
+
+  .si-standings-page.si-integrated-widget .si-data {
+      font-size: 14px
+  }
+
+  .si-standings-page.si-integrated-widget .si-team-name .si-sname {
+      display: block
+  }
+}
+
+.si-tournament-stat .si-card-title,.si-tournament-records .si-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 2
+}
+
+.si-tournament-stat .si-table,.si-tournament-records .si-table {
+  border-radius: 8px;
+  border: 2px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0;
+  width: 100%
+}
+
+.si-tournament-stat .si-table-section.swiper,.si-tournament-records .si-table-section.swiper {
+  overflow: hidden;
+  touch-action: pan-y
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination {
+  position: unset;
+  transition: 300ms
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination-bullet,.si-tournament-records .si-table-section .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  opacity: 1
+}
+
+.si-tournament-stat .si-table-section .swiper-pagination .swiper-pagination-bullet-active,.si-tournament-records .si-table-section .swiper-pagination .swiper-pagination-bullet-active {
+  width: 32px;
+  height: 4px
+}
+
+.si-tournament-stat .si-table-head,.si-tournament-records .si-table-head {
+  height: 44px
+}
+
+.si-tournament-stat .si-table-footer,.si-tournament-records .si-table-footer {
+  height: 34px
+}
+
+.si-tournament-stat .si-table-footer .si-btn-site,.si-tournament-records .si-table-footer .si-btn-site {
+  text-decoration: none
+}
+
+.si-tournament-stat .si-table-footer .si-btn-site:after,.si-tournament-records .si-table-footer .si-btn-site:after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-tournament-stat .si-table-footer .si-text,.si-tournament-records .si-table-footer .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 2
+}
+
+.si-tournament-stat .si-table-row,.si-tournament-records .si-table-row {
+  height: 48px
+}
+
+.si-tournament-stat .si-table-row:after,.si-tournament-records .si-table-row:after {
+  content: "";
+  height: 1px
+}
+
+.si-tournament-stat .si-table-data .si-text,.si-tournament-records .si-table-data .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-tournament-stat .si-table-data.si-pos,.si-tournament-records .si-table-data.si-pos {
+  width: 40px
+}
+
+.si-tournament-stat .si-table-data.si-pos::after,.si-tournament-records .si-table-data.si-pos::after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  right: var(--space-3);
+  position: absolute
+}
+
+.si-tournament-stat .si-table-data.si-points,.si-tournament-records .si-table-data.si-points {
+  justify-content: flex-end;
+  width: 40px
+}
+
+.si-tournament-stat .si-table-data.si-player,.si-tournament-records .si-table-data.si-player {
+  width: calc(100% - 80px)
+}
+
+.si-tournament-stat .si-table-data.si-player .si-logo,.si-tournament-records .si-table-data.si-player .si-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-tournament-stat .si-table-data .si-player-name,.si-tournament-records .si-table-data .si-player-name {
+  font-size: 12px
+}
+
+.si-tournament-stat .si-table-data .si-player-name .si-name,.si-tournament-stat .si-table-data .si-player-name .si-country,.si-tournament-records .si-table-data .si-player-name .si-name,.si-tournament-records .si-table-data .si-player-name .si-country {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-tournament-stat .si-table-data .si-player-name .si-fname,.si-tournament-records .si-table-data .si-player-name .si-fname {
+  text-transform: capitalize;
+  font-weight: 600
+}
+
+.si-tournament-stat .si-table-data .si-player-name-wrap,.si-tournament-records .si-table-data .si-player-name-wrap {
+  text-decoration: none
+}
+
+.si-tournament-stat .si-table-row:first-child,.si-tournament-records .si-table-row:first-child {
+  height: 100px;
+  overflow: hidden
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name {
+  line-height: 18px;
+  padding-right: var(--space-2)
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name .si-name,.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name .si-country,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-name,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-country {
+  font-size: 16px
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name .si-fname,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-fname {
+  font-size: 16px
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name .si-lname,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-lname {
+  font-size: 16px
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data.si-points .si-text,.si-tournament-records .si-table-row:first-child .si-table-data.si-points .si-text {
+  font-size: 18px
+}
+
+.si-tournament-stat .si-table-row:first-child .si-table-data-wrap .si-image,.si-tournament-records .si-table-row:first-child .si-table-data-wrap .si-image {
+  right: var(--space-3);
+  bottom: 0;
+  position: absolute
+}
+
+.si-tournament-stat .si-table-title,.si-tournament-records .si-table-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4
+}
+
+.si-tournament-stat .si-table-title em,.si-tournament-records .si-table-title em {
+  font-style: normal;
+  font-weight: 400
+}
+
+.si-tournament-stat .si-theme .si-table-row:first-child .si-text,.si-tournament-stat .si-theme .si-table-row:first-child .si-name,.si-tournament-stat .si-theme .si-table-row:first-child .si-country,.si-tournament-stat .si-theme .si-table-row:first-child .si-number,.si-tournament-records .si-theme .si-table-row:first-child .si-text,.si-tournament-records .si-theme .si-table-row:first-child .si-name,.si-tournament-records .si-theme .si-table-row:first-child .si-country,.si-tournament-records .si-theme .si-table-row:first-child .si-number {
+  color: var(--pure-white)
+}
+
+.si-tournament-stat .si-theme .si-table-row:first-child .si-table-data.si-pos::after,.si-tournament-records .si-theme .si-table-row:first-child .si-table-data.si-pos::after {
+  background: hsl(var(--hsl-pure-white)/0.5)
+}
+
+.si-tournament-stat .si-table-data.si-player {
+  position: relative
+}
+
+.si-tournament-stat .si-table-data.si-player .si-table-data-wrap {
+  width: 100%
+}
+
+.si-tournament-stat .si-table-data.si-player .si-player-info {
+  width: 100%;
+  justify-content: space-between
+}
+
+.si-tournament-stat .si-table-data.si-player .si-player-info .si-image {
+  position: unset;
+  flex-shrink: 0;
+  object-fit: contain
+}
+
+.si-tournament-records .si-table-row:first-child {
+  padding-right: 0
+}
+
+.si-tournament-records .si-table-row:first-child .si-player-info {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start
+}
+
+.si-tournament-records .si-table-row:first-child .si-number {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px
+}
+
+.si-tournament-records .si-table-row:first-child .si-player-image {
+  width: 50%;
+  padding-block:0}
+
+.si-tournament-records .si-table-row:first-child .si-table-data-wrap {
+  align-items: flex-start
+}
+
+.si-tournament-records .si-table-row:first-child .si-table-data.si-player {
+  width: calc(100% - (50% + 40px))
+}
+
+.si-tournament-records .si-table-row:first-child .si-table-data.si-pos {
+  align-items: flex-start
+}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-player-info {
+  justify-content: center
+}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data-wrap {
+  align-items: center
+}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data.si-player {
+  width: calc(100% - 90px)
+}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data.si-points {
+  width: 50px
+}
+
+.si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data.si-pos {
+  align-items: center
+}
+
+@media screen and (min-width: 768px) {
+  .si-tournament-stat,.si-tournament-records {
+      display:flex;
+      gap: var(--space-6);
+      margin-bottom: var(--space-10)
+  }
+
+  .si-tournament-stat .si-card-head,.si-tournament-records .si-card-head {
+      margin-bottom: var(--space-6)
+  }
+
+  .si-tournament-stat .si-card-title,.si-tournament-records .si-card-title {
+      font-size: 38px
+  }
+
+  .si-tournament-stat .si-left,.si-tournament-records .si-left {
+      width: 20%;
+      position: relative
+  }
+
+  .si-tournament-stat .si-left::after,.si-tournament-records .si-left::after {
+      content: "";
+      background: hsl(var(--hsl-pure-black)/0.2);
+      height: 100%;
+      width: 1px;
+      top: 0;
+      right: var(--space-3-neg);
+      position: absolute
+  }
+
+  .si-tournament-stat .si-right,.si-tournament-records .si-right {
+      width: 80%;
+      gap: var(--space-10);
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column
+  }
+
+  .si-tournament-stat .si-table,.si-tournament-records .si-table {
+      width: calc(33.33% - 2*var(--space-4)/3)
+  }
+
+  .si-tournament-stat .si-table-section.swiper,.si-tournament-records .si-table-section.swiper {
+      padding-right: 0
+  }
+
+  .si-tournament-stat .si-table-section .swiper-wrapper,.si-tournament-records .si-table-section .swiper-wrapper {
+      gap: var(--space-4)
+  }
+
+  .si-tournament-stat .si-table-section .swiper-pagination,.si-tournament-records .si-table-section .swiper-pagination {
+      display: none
+  }
+
+  .si-tournament-stat .si-table-row:first-child .si-points .si-text,.si-tournament-records .si-table-row:first-child .si-points .si-text {
+      font-size: 26px
+  }
+
+  .si-tournament-stat .si-table-row:first-child .si-table-data .si-player-name,.si-tournament-records .si-table-row:first-child .si-table-data .si-player-name {
+      width: 100%
+  }
+
+  .si-tournament-stat .si-table-data.si-pos,.si-tournament-records .si-table-data.si-pos {
+      width: 30px
+  }
+
+  .si-tournament-stat .si-table-data.si-pos::after,.si-tournament-records .si-table-data.si-pos::after {
+      right: var(--space-2)
+  }
+
+  .si-tournament-stat .si-table-data.si-player,.si-tournament-records .si-table-data.si-player {
+      width: calc(100% - 80px)
+  }
+
+  .si-tournament-stat .si-table-data.si-points,.si-tournament-records .si-table-data.si-points {
+      width: 50px
+  }
+
+  .si-tournament-records .si-table-row:first-child {
+      height: 140px
+  }
+
+  .si-tournament-records .si-table-row:first-child .si-table-data-wrap {
+      width: 100%;
+      flex-direction: column
+  }
+
+  .si-tournament-records .si-table-row:first-child .si-player-info {
+      width: calc(100% - 34px);
+      padding-left: 0
+  }
+
+  .si-tournament-records .si-table-row:first-child .si-table-data.si-player {
+      width: calc(100% - (50% + 30px))
+  }
+
+  .si-tournament-records .si-table-row:first-child .si-table-data .si-player-name .si-lname {
+      font-size: 18px
+  }
+
+  .si-tournament-records .si-table-row:first-child .si-number {
+      font-size: 26px;
+      line-height: 32px
+  }
+
+  .si-tournament-records .si-team-stats .si-table-row:first-child {
+      height: 100px
+  }
+
+  .si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data.si-player {
+      width: calc(100% - 80px)
+  }
+
+  .si-tournament-records .si-team-stats .si-table-row:first-child .si-table-data-wrap {
+      flex-direction: row
+  }
+
+  .si-tournament-records .si-team-stats .si-table-row:first-child .si-player-info {
+      padding-left: var(--space-2)
+  }
+
+  .si-tournament-stat .si-table-row:first-child .si-table-data-wrap {
+      width: 100%
+  }
+
+  .si-tournament-stat .si-table-row:first-child .si-player-info {
+      width: calc(100% - 34px);
+      justify-content: space-between
+  }
+
+  .si-tournament-stat .si-table-row:first-child .si-player-info .si-image {
+      position: unset;
+      width: 100px
+  }
+}
+
+.si-tournament-detail .si-head .si-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 2
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-select-box-wrap {
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title {
+  border-radius: 30px;
+  align-items: center
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title::after {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-selected-title .si-flag {
+  width: 25px;
+  height: 15px
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-title {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 2
+}
+
+.si-tournament-detail .si-head .si-filter-section .si-list-item .si-flag {
+  width: 30px;
+  height: 20px
+}
+
+.si-tournament-detail .si-body .si-table-responsive {
+  overflow: unset
+}
+
+.si-tournament-detail .si-table-left {
+  width: 50%;
+  border-right: 1px solid hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-tournament-detail .si-table-left::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  box-shadow: 5px 5px 10px 0px hsl(var(--hsl-pure-black)/1);
+  z-index: var(--zindex-box-shadow)
+}
+
+.si-tournament-detail .si-table-left .si-pos {
+  width: 40px
+}
+
+.si-tournament-detail .si-table-left .si-team {
+  justify-content: flex-start
+}
+
+.si-tournament-detail .si-table-left .si-table-body .si-table-data.si-pos::before {
+  content: "";
+  width: 1px;
+  height: 25px;
+  right: var(--space-2);
+  position: absolute
+}
+
+.si-tournament-detail .si-table-right {
+  width: 50%
+}
+
+.si-tournament-detail .si-table-right .si-table-data {
+  width: 70px;
+  flex-shrink: 0
+}
+
+.si-tournament-detail .si-team {
+  width: calc(100% - 40px)
+}
+
+.si-tournament-detail .si-team .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-tournament-detail .si-team .si-player-name .si-player-name-wrap {
+  text-decoration: none
+}
+
+.si-tournament-detail .si-team .si-player-name .si-text {
+  font-weight: 800;
+  font-size: 12px;
+  height: auto
+}
+
+.si-tournament-detail .si-team .si-player-name .si-text.si-fname {
+  font-weight: 600
+}
+
+.si-tournament-detail .si-table-head .si-table-data {
+  height: 42px
+}
+
+.si-tournament-detail .si-table-head .si-table-data .si-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px
+}
+
+.si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data {
+  height: 100px
+}
+
+.si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data .si-text {
+  font-size: 16px
+}
+
+.si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-text {
+  line-height: 18px
+}
+
+.si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-fname {
+  font-size: 12px
+}
+
+.si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-lname {
+  font-size: 14px
+}
+
+.si-tournament-detail .si-table-body .si-table-data {
+  height: 48px
+}
+
+.si-tournament-detail .si-table-body .si-table-data .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 20px
+}
+
+.si-tournament-detail .si-table-body .si-table-data.si-team .si-text {
+  line-height: 14px
+}
+
+.si-tournament-detail .si-table-body .si-table-data:after {
+  content: "";
+  height: 1px
+}
+
+.si-tournament-detail .si-theme .si-table-body .si-table-row:first-child .si-table-data {
+  background: initial
+}
+
+.si-tournament-detail .si-theme .si-table-body .si-table-row:first-child .si-table-data:first-child {
+  background: inherit
+}
+
+.si-tournament-detail .si-theme .si-table-body .si-table-row:first-child .si-table-data .si-text,.si-tournament-detail .si-theme .si-table-body .si-table-row:first-child .si-table-data .si-name {
+  color: var(--pure-white)
+}
+
+.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-tournament-detail .si-victories .si-table-body .si-table-data.si-innings .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-tournament-detail .si-victories .si-table-body .si-table-data.si-batavg {
+  justify-content: flex-start
+}
+
+.si-tournament-detail .si-victories .si-table-body .si-table-data.si-batavg .si-text {
+  font-size: 12px
+}
+
+.si-tournament-detail .si-victories .si-table-right .si-table-data {
+  width: 135px
+}
+
+.si-tournament-detail .si-no-data-text {
+  width: max-content;
+  font-size: 14px;
+  font-weight: 600
+}
+
+.si-tournament-team-detail .si-table-body .si-table-row:first-child .si-name {
+  font-size: 16px
+}
+
+.si-tournament-team-detail .si-table-left {
+  width: 45%
+}
+
+.si-tournament-team-detail .si-table-right {
+  width: 55%
+}
+
+.si-tournament-team-detail .si-table-right .si-table-row {
+  display: inline-flex
+}
+
+.si-tournament-team-detail .si-team .si-team-name {
+  display: flex
+}
+
+.si-tournament-team-detail .si-team .si-name {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-innings .si-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-batavg {
+  justify-content: flex-start
+}
+
+.si-tournament-team-detail .si-victories .si-table-body .si-table-data.si-batavg .si-text {
+  font-size: 12px
+}
+
+.si-tournament-team-detail .si-victories .si-table-right .si-table-data {
+  width: 135px
+}
+
+.si-tournament-stat-detail .si-team .si-team-name .si-fname {
+  font-size: 12px;
+  display: none
+}
+
+.si-tournament-stat-detail .si-team .si-team-name .si-sname {
+  font-size: 12px
+}
+
+.si-tournament-stat-detail .si-table-body .si-table-row:first-child .si-team .si-team-name .si-sname {
+  font-size: 16px
+}
+
+.si-tournament-stat-detail .si-table-right .si-table-row {
+  display: inline-flex
+}
+
+@media screen and (min-width: 768px) {
+  .si-tournament-detail {
+      display:flex;
+      gap: var(--space-6);
+      margin-bottom: var(--space-10)
+  }
+
+  .si-tournament-detail .si-table {
+      padding-bottom: 0
+  }
+
+  .si-tournament-detail .si-table.si-team-tab .si-table-left {
+      width: 45%
+  }
+
+  .si-tournament-detail .si-table.si-team-tab .si-table-left .si-team {
+      width: calc(100% - 60px)
+  }
+
+  .si-tournament-detail .si-table.si-team-tab .si-table-right {
+      width: 55%
+  }
+
+  .si-tournament-detail .si-left {
+      width: 20%;
+      position: relative
+  }
+
+  .si-tournament-detail .si-left::after {
+      content: "";
+      background: hsl(var(--hsl-pure-black)/0.2);
+      height: 100%;
+      width: 1px;
+      top: 0;
+      right: var(--space-3-neg);
+      position: absolute
+  }
+
+  .si-tournament-detail .si-right {
+      width: 80%
+  }
+
+  .si-tournament-detail .si-head {
+      margin-bottom: var(--space-4);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center
+  }
+
+  .si-tournament-detail .si-head .si-title {
+      margin-bottom: 0;
+      font-size: 38px;
+      line-height: 1.4
+  }
+
+  .si-tournament-detail .si-head .si-filter-section .si-select-box-wrap {
+      left: auto;
+      transform: unset;
+      right: 0;
+      width: 200px
+  }
+
+  .si-tournament-detail .si-head .si-filter-section .si-select-box-wrap::before {
+      transform: unset;
+      left: auto;
+      right: var(--space-4)
+  }
+
+  .si-tournament-detail .si-table-head .si-table-data {
+      height: 44px
+  }
+
+  .si-tournament-detail .si-table-head .si-table-data .si-text {
+      font-size: 14px
+  }
+
+  .si-tournament-detail .si-table-left {
+      width: 60%;
+      border-right: 0
+  }
+
+  .si-tournament-detail .si-table-left::after {
+      content: unset
+  }
+
+  .si-tournament-detail .si-table-left .si-table-data.si-player {
+      display: flex
+  }
+
+  .si-tournament-detail .si-table-left .si-pos {
+      width: 60px
+  }
+
+  .si-tournament-detail .si-table-left .si-table-head .si-team .si-text:nth-child(2) {
+      display: none
+  }
+
+  .si-tournament-detail .si-table-left .si-team {
+      width: 240px
+  }
+
+  .si-tournament-detail .si-table-left .si-player {
+      width: calc(100% - 300px);
+      justify-content: flex-start
+  }
+
+  .si-tournament-detail .si-table-left .si-player .si-fname {
+      font-size: 12px
+  }
+
+  .si-tournament-detail .si-table-left .si-player-name-wrap {
+      text-decoration: none
+  }
+
+  .si-tournament-detail .si-table-left .si-table-body .si-table-data.si-pos::before {
+      right: 14px
+  }
+
+  .si-tournament-detail .si-table-right {
+      width: 40%
+  }
+
+  .si-tournament-detail .si-table-right .si-table-data {
+      flex: 1;
+      width: unset
+  }
+
+  .si-tournament-detail .si-table-right .si-table-data .si-text {
+      color: var(--primary)
+  }
+
+  .si-tournament-detail .si-table-right .si-table-body .si-table-data .si-text {
+      color: var(--primary);
+      text-align: center
+  }
+
+  .si-tournament-detail .si-team .si-player-name {
+      display: none
+  }
+
+  .si-tournament-detail .si-team .si-team-name {
+      display: flex
+  }
+
+  .si-tournament-detail .si-team .si-team-name .si-text {
+      text-transform: uppercase;
+      font-size: 10px
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data .si-text {
+      font-size: 24px
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data .si-text.si-fname {
+      font-size: 12px
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-table-data.si-pos::before {
+      right: 8px;
+      background: hsl(var(--hsl-pure-white)/0.5)
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-team .si-text {
+      font-size: 24px;
+      line-height: 26px
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-player .si-player-name {
+      display: flex;
+      flex-direction: column
+  }
+
+  .si-tournament-detail .si-table-body .si-table-row:first-child .si-player .si-player-name-wrap {
+      display: flex;
+      flex-direction: column
+  }
+
+  .si-tournament-detail .si-victories .si-table-left {
+      width: 40%
+  }
+
+  .si-tournament-detail .si-victories .si-table-right {
+      width: 60%
+  }
+
+  .si-tournament-detail.si-tournament-stat-detail .si-table-left {
+      width: 50%
+  }
+
+  .si-tournament-detail.si-tournament-stat-detail .si-table-right {
+      width: 50%
+  }
+
+  .si-tournament-team-detail .si-table-left {
+      width: 50%
+  }
+
+  .si-tournament-team-detail .si-table-left .si-pos {
+      width: 70px
+  }
+
+  .si-tournament-team-detail .si-table-left .si-team {
+      width: calc(100% - 70px)
+  }
+
+  .si-tournament-team-detail .si-table-right {
+      width: 50%
+  }
+
+  .si-tournament-team-detail .si-table-right .si-table-row {
+      display: flex
+  }
+
+  .si-tournament-team-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-fname {
+      font-size: 24px
+  }
+
+  .si-tournament-team-detail .si-team .si-fname {
+      display: flex;
+      font-size: 12px
+  }
+
+  .si-tournament-team-detail .si-team .si-sname {
+      display: none
+  }
+
+  .si-tournament-team-detail .si-victories .si-table-left {
+      width: 40%
+  }
+
+  .si-tournament-team-detail .si-victories .si-table-right {
+      width: 60%
+  }
+
+  .si-tournament-stat-detail .si-table-right .si-table-row {
+      display: flex
+  }
+
+  .si-tournament-stat-detail .si-team .si-sname {
+      display: none
+  }
+
+  .si-tournament-stat-detail .si-team .si-team-name .si-fname {
+      display: flex
+  }
+
+  .si-tournament-stat-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-text {
+      line-height: 30px
+  }
+
+  .si-tournament-stat-detail .si-table-body .si-table-row:first-child .si-table-data.si-team .si-fname {
+      font-size: 24px;
+      height: auto
+  }
+
+  .si-tournament-stat-detail .si-table-body .si-table-row:first-child .si-table-data:last-child .si-text {
+      line-height: 26px
+  }
+
+  .si-tournament-stat-detail .si-table-left .si-table-body .si-player .si-lname {
+      text-transform: uppercase
+  }
+}
+
+.si-player-comparison {
+  --_filter-width: 30%
+}
+
+.si-player-comparison .si-tabs {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.si-player-comparison .si-tabs .si-tab-name {
+  flex: 1
+}
+
+.si-player-comparison .si-tabs .si-tab-name.si-active .si-tab-anchor::before {
+  bottom: -1px
+}
+
+.si-player-comparison .si-tabs .si-tab-anchor {
+  justify-content: center
+}
+
+.si-player-comparison .si-player {
+  border-radius: var(--half-radius) var(--half-radius) 0 0;
+  overflow: hidden
+}
+
+.si-player-comparison .si-player-wrap {
+  flex-wrap: wrap;
+  column-gap: 10px
+}
+
+.si-player-comparison .si-player-thumbnail {
+  width: calc(50% - 5px);
+  align-items: center
+}
+
+.si-player-comparison .si-player-thumbnail .si-player-img {
+  width: 160px;
+  height: 250px
+}
+
+.si-player-comparison .si-player-thumbnail .si-image {
+  object-fit: cover
+}
+
+.si-player-comparison .si-player-thumbnail .si-btn-add {
+  background: rgba(0,0,0,0);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer
+}
+
+.si-player-comparison .si-player-thumbnail .si-btn-add::before {
+  transform: rotate(45deg);
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 30px
+}
+
+.si-player-comparison .si-player-thumbnail::before {
+  content: "";
+  background: linear-gradient(180deg, hsl(var(--hsl-primary)/0) 67.16%, var(--primary) 94.28%);
+  box-shadow: -10px -4px 44px 0px rgba(0,0,0,.1411764706);
+  pointer-events: none;
+  z-index: var(--zindex-compare-player);
+  bottom: 20px;
+  left: 0;
+  position: absolute
+}
+
+.si-player-comparison .si-player-content {
+  order: 2;
+  isolation: isolate
+}
+
+.si-player-comparison .si-player-content::after {
+  content: "";
+  width: calc(100% + 16px);
+  height: 430px;
+  pointer-events: none;
+  background: url("/static-assets/images/pattern-ball-color.svg?v=1.8") bottom/cover no-repeat;
+  z-index: var(--zindex-pattern);
+  bottom: -235px;
+  left: -8px;
+  position: absolute
+}
+
+.si-player-comparison .si-player-content .si-select-player-title .si-title {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-player-comparison .si-player-info {
+  width: calc(50% - 5px)
+}
+
+.si-player-comparison .si-player-info.si-b .si-team {
+  flex-direction: row-reverse
+}
+
+.si-player-comparison .si-player-info.si-b .si-player-name {
+  align-items: flex-end
+}
+
+.si-player-comparison .si-player-name .si-fname {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-player-name .si-lname {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-player-comparison .si-player-personal-info .si-number {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-player-comparison .si-player-personal-info .si-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-player-personal-info .si-player-item {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 110px 1fr
+}
+
+.si-player-comparison .si-player-personal-info .si-player-item:nth-child(odd) {
+  border-radius: var(--half-radius);
+  background: hsl(var(--hsl-pure-white)/0.05);
+  backdrop-filter: blur(5px)
+}
+
+.si-player-comparison .si-player .si-team-image {
+  width: 34px;
+  height: 20px
+}
+
+.si-player-comparison .si-player .si-team-name {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-player-select {
+  z-index: var(--zindex-button)
+}
+
+.si-player-comparison .si-player-select .si-player-btn {
+  height: 46px;
+  border-radius: 30px;
+  border: 0
+}
+
+.si-player-comparison .si-player-select .si-player-btn:after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 12px
+}
+
+.si-player-comparison .si-player-select .si-btn-text {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-card {
+  box-shadow: 0px 0px 10px 0px hsl(var(--hsl-pure-black)/0.1);
+  border-radius: 1.5rem;
+  border: 1px solid var(--light-grey)
+}
+
+.si-player-comparison .si-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-player-comparison .si-card-item {
+  border-top: 1px solid var(--light-grey);
+  display: grid;
+  grid-template-columns: 1fr 150px 1fr;
+  align-items: center
+}
+
+.si-player-comparison .si-card-item .si-number {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-player-comparison .si-card-item .si-number .si-text {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-card-item .si-label {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-chart-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: clip
+}
+
+.si-player-comparison .si-graph-group {
+  gap: var(--space-11);
+  flex-wrap: wrap;
+  display: flex
+}
+
+.si-player-comparison .si-find-player {
+  z-index: var(--zindex-compare-player-filter);
+  overflow-y: auto;
+  transition: .3s ease-in-out;
+  top: 0;
+  left: -100%;
+  position: fixed
+}
+
+.si-player-comparison .si-find-player.si-active {
+  left: 0
+}
+
+.si-player-comparison .si-find-player.si-active::before {
+  width: calc(100% - var(--_filter-width));
+  top: 0;
+  left: var(--_filter-width);
+  position: fixed
+}
+
+.si-player-comparison .si-find-player .si-head .si-btn-close {
+  background: rgba(0,0,0,0);
+  border: 0;
+  position: absolute;
+  right: 0
+}
+
+.si-player-comparison .si-find-player .si-head .si-btn-close::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 14px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-label .si-text {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-find-player .si-filter .si-select-box {
+  height: 33px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-select-box-wrap {
+  z-index: var(--zindex-filter);
+  border-radius: 0 0 10px 10px;
+  width: calc(100% - var(--space-5));
+  border: 1px solid var(--light-grey);
+  border-top: 0;
+  top: 33px;
+  left: 10px;
+  position: absolute
+}
+
+.si-player-comparison .si-find-player .si-filter .si-select-list {
+  overflow-y: auto;
+  list-style: none
+}
+
+.si-player-comparison .si-find-player .si-filter .si-list-item:not(:last-child) {
+  border-bottom: 1px solid var(--light-grey)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-list-item .si-link {
+  border: 0;
+  background: rgba(0,0,0,0);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-find-player .si-filter .si-selected-title {
+  border-radius: 27px;
+  height: 33px;
+  border: 1px solid var(--light-grey);
+  cursor: pointer
+}
+
+.si-player-comparison .si-find-player .si-filter .si-selected-title:after {
+  content: "";
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 12px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-sub-title {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-find-player .si-filter .si-title {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-find-player .si-filter .si-searchbar .si-search {
+  border-radius: 27px;
+  height: 33px;
+  border: 1px solid var(--light-grey);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 12
+}
+
+.si-player-comparison .si-find-player .si-filter .si-btn-link {
+  border-radius: 30px;
+  height: 45px;
+  width: 130px;
+  border: 0
+}
+
+.si-player-comparison .si-find-player .si-filter .si-btn-link .si-btn-text {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2
+}
+
+.si-player-comparison .si-find-player .si-filter .si-btn-link::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 10px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-select-box-wrap {
+  min-height: 100px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search {
+  position: absolute
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .si-input {
+  border-radius: 27px;
+  height: 33px;
+  border: 1px solid var(--light-grey);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 12
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search {
+  border: 0;
+  background: rgba(0,0,0,0);
+  right: var(--space-6)
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-search .btn-search:before {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 12px
+}
+
+.si-player-comparison .si-find-player .si-filter .si-team-search .si-select-list {
+  height: calc(100% - 49px);
+  margin-top: 49px
+}
+
+.si-player-comparison .si-find-player .si-player-item:after {
+  content: "";
+  height: 1px;
+  left: var(--space-4-neg);
+  width: calc(100% + var(--space-8))
+}
+
+.si-player-comparison .si-find-player .si-player-img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0
+}
+
+.si-player-comparison .si-find-player .si-player-name .si-text {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-player-comparison .si-find-player .si-player-role .si-text {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.4
+}
+
+.si-player-comparison .si-find-player .si-team-img {
+  width: 25px;
+  height: 13px
+}
+
+.si-player-comparison .si-find-player .si-footer .si-btn-add {
+  border: 0;
+  background: rgba(0,0,0,0)
+}
+
+.si-player-comparison .si-find-player .si-footer .si-btn-add:before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 10px
+}
+
+.si-player-comparison .si-toggle .si-check[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden
+}
+
+.si-player-comparison .si-toggle .si-switch {
+  cursor: pointer;
+  width: 64px;
+  height: 36px;
+  border-radius: 100px
+}
+
+.si-player-comparison .si-toggle .si-switch:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 90px;
+  transition: .3s;
+  top: 3px;
+  left: 3px;
+  position: absolute
+}
+
+.si-player-comparison .si-toggle .si-switch .si-text::after,.si-player-comparison .si-toggle .si-switch .si-text::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1
+}
+
+.si-player-comparison .si-toggle .si-switch .si-text::after {
+  content: "WICKETS";
+  right: -70px
+}
+
+.si-player-comparison .si-toggle .si-switch .si-text::before {
+  content: "RUNS";
+  left: -50px;
+  color: var(--medium-blue)
+}
+
+.si-player-comparison .si-toggle .si-check:checked+.si-switch:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%)
+}
+
+@media screen and (min-width: 768px) {
+  .si-player-comparison .si-tabs {
+      margin-inline:0
+  }
+
+  .si-player-comparison .si-tabs .si-tab-name {
+      flex: unset;
+      width: 5rem
+  }
+
+  .si-player-comparison .si-player {
+      margin-bottom: var(--space-10);
+      border-radius: var(--half-radius)
+  }
+
+  .si-player-comparison .si-player-wrap {
+      gap: 0
+  }
+
+  .si-player-comparison .si-player-content {
+      order: unset;
+      width: 70%;
+      margin-top: 0;
+      justify-content: space-between
+  }
+
+  .si-player-comparison .si-player-content::after {
+      content: "";
+      top: calc(50% + 20px);
+      transform: translateY(-50%);
+      height: 100%;
+      pointer-events: none;
+      bottom: unset;
+      background: url("/static-assets/images/pattern-ball-color.svg?v=1.8") no-repeat;
+      background-size: cover
+  }
+
+  .si-player-comparison .si-player-content .si-select-player-title .si-title {
+      font-size: 26px
+  }
+
+  .si-player-comparison .si-player-thumbnail {
+      width: 15%
+  }
+
+  .si-player-comparison .si-player-thumbnail .si-player-img {
+      width: 200px;
+      height: 270px
+  }
+
+  .si-player-comparison .si-player-thumbnail:before {
+      box-shadow: none
+  }
+
+  .si-player-comparison .si-player-personal-info .si-number {
+      font-size: 14px
+  }
+
+  .si-player-comparison .si-player-personal-info .si-label {
+      font-size: 16px
+  }
+
+  .si-player-comparison .si-player-personal-info .si-player-item {
+      grid-template-columns: 1fr 140px 1fr
+  }
+
+  .si-player-comparison .si-player-name .si-fname {
+      font-size: 16px;
+      line-height: 20px
+  }
+
+  .si-player-comparison .si-player-name .si-lname {
+      font-size: 26px;
+      line-height: 30px
+  }
+
+  .si-player-comparison .si-player-select .si-player-btn {
+      width: 70%
+  }
+
+  .si-player-comparison .si-team-name {
+      font-size: 18px
+  }
+
+  .si-player-comparison .si-card {
+      padding-inline:100px;padding-block:var(--space-10)}
+
+  .si-player-comparison .si-card-section {
+      margin-block: var(--space-10);
+      margin-inline:0;gap: var(--space-10)
+  }
+
+  .si-player-comparison .si-card-title {
+      font-size: 26px;
+      margin-bottom: var(--space-10)
+  }
+
+  .si-player-comparison .si-card-item {
+      display: flex;
+      justify-content: space-between
+  }
+
+  .si-player-comparison .si-card-item .si-number {
+      width: 15%;
+      font-size: 26px
+  }
+
+  .si-player-comparison .si-card-item .si-number .si-text {
+      font-size: 12px
+  }
+
+  .si-player-comparison .si-card-item .si-label {
+      font-size: 16px;
+      width: 15%
+  }
+
+  .si-player-comparison .si-card.si-graph {
+      margin-bottom: var(--space-6)
+  }
+
+  .si-player-comparison .si-find-player {
+      width: var(--_filter-width);
+      border-right: 1px solid var(--light-grey)
+  }
+
+  .si-player-comparison .si-find-player::-webkit-scrollbar {
+      width: 8px;
+      height: 4px
+  }
+
+  .si-player-comparison .si-find-player::-webkit-scrollbar-track {
+      background: hsl(var(--hsl-dark-grey)/1);
+      border-radius: var(--half-radius)
+  }
+
+  .si-player-comparison .si-find-player::-webkit-scrollbar-thumb {
+      border-radius: var(--half-radius);
+      background: var(--light-grey)
+  }
+
+  .si-player-comparison .si-find-player::-webkit-scrollbar-thumb:hover {
+      border-radius: var(--half-radius);
+      background: var(--pure-black)
+  }
+
+  .si-player-comparison .si-find-player.si-active::before {
+      content: ""
+  }
+
+  .si-player-comparison .si-chart-wrapper {
+      width: calc(50% - 22px)
+  }
+
+  .si-player-comparison .si-toggle {
+      border-bottom: 1px solid var(--light-grey);
+      padding-bottom: var(--space-7)
+  }
+}
+
+.si-ranking-predictor .si-head .si-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px
+}
+
+.si-ranking-predictor .si-head .si-desc {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-ranking-predictor .si-tab-section {
+  border-bottom: 1px solid hsl(var(--hsl-pure-black)/0.1);
+  overflow-x: auto
+}
+
+.si-ranking-predictor .si-tab-section .si-tab-anchor {
+  text-decoration: none
+}
+
+.si-ranking-predictor .si-predictor-head {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-ranking-predictor .si-predictor-body {
+  height: 100px;
+  z-index: 2
+}
+
+.si-ranking-predictor .si-predictor-body:after {
+  content: "";
+  background: url("/static-assets/images/pattern-ball-3.svg?v=1.8") no-repeat top/cover;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-50%);
+  width: 200px;
+  top: 5px;
+  left: 50%;
+  position: absolute
+}
+
+.si-ranking-predictor .si-predictor-result {
+  font-size: 12px;
+  font-weight: 400
+}
+
+.si-ranking-predictor .si-predictor-count-value {
+  font-size: 12px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-team {
+  width: calc(50% - 40px);
+  gap: var(--space-2)
+}
+
+.si-ranking-predictor .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-ranking-predictor .si-team-logo .si-logo {
+  object-fit: cover
+}
+
+.si-ranking-predictor .si-team-name .si-text {
+  font-size: 22px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-team-b {
+  flex-direction: row-reverse
+}
+
+.si-ranking-predictor .si-score {
+  font-size: 22px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-score-wrapper {
+  width: 80px
+}
+
+.si-ranking-predictor .si-score-item {
+  width: max-content
+}
+
+.si-ranking-predictor .si-score-item:first-child:after {
+  content: "";
+  width: 1px;
+  background-color: hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-ranking-predictor .si-score-btn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid hsl(var(--hsl-light-grey)/1);
+  flex-shrink: 0
+}
+
+.si-ranking-predictor .si-score-btn .si-text::after {
+  pointer-events: none
+}
+
+.si-ranking-predictor .si-score-btn.si-plus {
+  transform: rotate(45deg)
+}
+
+.si-ranking-predictor .si-score-btn.si-plus .si-text::after {
+  font-family: "waf-font-icon";
+  content: "";
+  font-size: 7px
+}
+
+.si-ranking-predictor .si-score-btn.si-minus .si-text::after {
+  content: "";
+  pointer-events: none;
+  width: 7px;
+  height: .5px
+}
+
+.si-ranking-predictor .si-score-wrapper {
+  width: 80px;
+  flex-shrink: 0
+}
+
+.si-ranking-predictor .si-score-count-item {
+  width: max-content
+}
+
+.si-ranking-predictor .si-score-count-item:first-child:after {
+  content: "";
+  width: 1px;
+  background-color: hsl(var(--hsl-pure-black)/0.1)
+}
+
+.si-ranking-predictor .si-btn-section {
+  margin-bottom: calc(var(--space-3)*10)
+}
+
+.si-ranking-predictor .si-btn-section .si-btn-site {
+  border: 1px solid hsl(var(--hsl-light-grey)/1);
+  height: 45px;
+  border-radius: 30px
+}
+
+.si-ranking-predictor .si-btn-section .si-btn-site:after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-btn-section .si-btn-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 34px
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 34px;
+  transition: transform .4s linear,background-color .4s linear;
+  border-radius: 25px;
+  padding: 0 2px;
+  margin: 0;
+  cursor: pointer
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input:focus {
+  outline: none
+}
+
+.si-ranking-predictor .si-toggle .si-text {
+  font-size: 0
+}
+
+.si-ranking-predictor .si-toggle .si-toggle-input::-webkit-slider-thumb,.si-ranking-predictor .si-toggle.si-neutral .si-toggle-input::-webkit-slider-thumb {
+  background: var(--pure-white)
+}
+
+.si-ranking-predictor .si-rankings-table-wrapper {
+  border-radius: calc(var(--half-radius)*3)
+}
+
+.si-ranking-predictor .si-rankings-table-section {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--zindex-rankings-table);
+  transition: all .5s
+}
+
+.si-ranking-predictor .si-rankings-table-section .si-title {
+  color: var(--pure-white)
+}
+
+.si-ranking-predictor .si-rankings-table-section.si-active-open {
+  height: calc(100% - 125px)
+}
+
+.si-ranking-predictor .si-rankings-table-section.si-active-open .si-table-info-text::after {
+  transform: rotate(90deg)
+}
+
+.si-ranking-predictor .si-table-head {
+  border-radius: var(--half-radius) var(--half-radius) 0 0
+}
+
+.si-ranking-predictor .si-table-info-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-info-text:after {
+  content: "";
+  font-size: 10px;
+  font-family: "waf-font-icon";
+  pointer-events: none;
+  transform: rotate(-90deg);
+  top: -25px;
+  right: 0;
+  left: 0;
+  position: absolute
+}
+
+.si-ranking-predictor .si-table-footer .si-btn-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-footer .si-btn-site {
+  border: 1px solid hsl(var(--hsl-light-grey)/1);
+  height: 45px;
+  border-radius: 30px
+}
+
+.si-ranking-predictor .si-table-footer .si-btn-site:after {
+  content: "";
+  font-family: "waf-font-icon";
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-head {
+  height: 44px
+}
+
+.si-ranking-predictor .si-table-head:after {
+  content: "";
+  height: 3px
+}
+
+.si-ranking-predictor .si-table-head .si-table-data.si-pos::after {
+  content: unset
+}
+
+.si-ranking-predictor .si-table-head .si-table-data .si-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-data.si-pos {
+  width: 20%;
+  justify-content: flex-start
+}
+
+.si-ranking-predictor .si-table-data.si-pos::after {
+  content: "";
+  width: 1px;
+  height: 24px;
+  right: 0;
+  position: absolute
+}
+
+.si-ranking-predictor .si-table-data .si-range {
+  width: 15px;
+  gap: 2px;
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-data .si-range:before {
+  font-family: "waf-font-icon";
+  font-size: 8px
+}
+
+.si-ranking-predictor .si-table-data .si-range.up:before {
+  content: ""
+}
+
+.si-ranking-predictor .si-table-data .si-range.down:before {
+  content: ""
+}
+
+.si-ranking-predictor .si-table-data .si-range.neutral {
+  width: 6px;
+  height: 6px
+}
+
+.si-ranking-predictor .si-table-data.si-team {
+  width: calc(100% - 170px);
+  justify-content: flex-start
+}
+
+.si-ranking-predictor .si-table-data.si-team .si-logo {
+  object-fit: cover
+}
+
+.si-ranking-predictor .si-table-data.si-team .si-team-logo {
+  width: 34px;
+  height: 20px;
+  border: 1px solid hsl(var(--hsl-dark-grey)/0.2);
+  flex-shrink: 0
+}
+
+.si-ranking-predictor .si-table-data.si-rating {
+  width: 20%;
+  justify-content: center
+}
+
+.si-ranking-predictor .si-table-data.si-rating.si-fav:before {
+  content: "";
+  width: 15px;
+  height: 13px;
+  pointer-events: none;
+  background: url("/static-assets/images/like.svg?v=1.8") center/contain no-repeat
+}
+
+.si-ranking-predictor .si-table-data .si-text {
+  font-size: 10px;
+  font-weight: 800
+}
+
+.si-ranking-predictor .si-table-body .si-table-data {
+  height: 48px
+}
+
+.si-ranking-predictor .si-table-body .si-table-row:after {
+  content: "";
+  height: 1px
+}
+
+@media screen and (min-width: 768px) {
+  .si-ranking-predictor .si-team-name .si-fname {
+      display:block
+  }
+
+  .si-ranking-predictor .si-team-name .si-sname {
+      display: none
+  }
+
+  .si-ranking-predictor .si-team-name .si-text {
+      font-size: 38px;
+      line-height: 1
+  }
+
+  .si-ranking-predictor .si-predictor-body {
+      padding-inline:var(--space-10);margin-top: var(--space-3);
+      height: 120px
+  }
+
+  .si-ranking-predictor .si-predictor-head {
+      font-size: 14px
+  }
+
+  .si-ranking-predictor .si-predictor-result {
+      display: none
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle {
+      gap: var(--space-3);
+      position: relative;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle .si-text,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle .si-text {
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--medium-blue)
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle-wrapper,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle-wrapper {
+      display: none
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-neutral,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-neutral {
+      justify-content: center
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-neutral .si-toggle-wrapper,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-neutral .si-toggle-wrapper {
+      display: none
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-left,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-left {
+      justify-content: flex-start
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-left .si-toggle-wrapper:first-child,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-left .si-toggle-wrapper:first-child {
+      display: block
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-left .si-toggle-wrapper:last-child,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-left .si-toggle-wrapper:last-child {
+      display: none
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-right,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-right {
+      justify-content: flex-end
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-right .si-toggle-wrapper:first-child,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-right .si-toggle-wrapper:first-child {
+      display: none
+  }
+
+  .si-ranking-predictor .si-predictor-wrapper.si-odi .si-toggle.si-right .si-toggle-wrapper:last-child,.si-ranking-predictor .si-predictor-wrapper.si-t20 .si-toggle.si-right .si-toggle-wrapper:last-child {
+      display: block
+  }
+
+  .si-ranking-predictor .si-score {
+      font-size: 38px;
+      line-height: 45px
+  }
+
+  .si-ranking-predictor .si-btn-section {
+      margin-block:var(--space-6)}
+
+  .si-ranking-predictor .si-rankings-table-wrapper {
+      height: 100%
+  }
+
+  .si-ranking-predictor .si-rankings-table-section.si-active-open {
+      height: calc(100% - 200px)
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-team-name .si-text {
+      font-size: 20px
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-table-data.si-team {
+      width: calc(100% - 250px)
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .si-ranking-predictor .si-head .si-title {
+      font-size:38px;
+      margin-bottom: var(--space-4)
+  }
+
+  .si-ranking-predictor .si-predictor-container {
+      display: flex
+  }
+
+  .si-ranking-predictor .si-predictor-section {
+      width: calc(100% - 375px);
+      padding: var(--space-5) var(--space-3);
+      position: relative
+  }
+
+  .si-ranking-predictor .si-predictor-section::after {
+      content: "";
+      width: 1px;
+      background-color: hsl(var(--hsl-pure-black)/0.1);
+      height: calc(100% - 110px);
+      position: absolute;
+      top: 0;
+      right: 0
+  }
+
+  .si-ranking-predictor .si-predictor-body::after {
+      width: 420px
+  }
+
+  .si-ranking-predictor .si-rankings-table-section {
+      position: unset;
+      width: 375px
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-title {
+      color: var(--primary);
+      font-size: 22px;
+      margin-bottom: var(--space-2)
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-desc {
+      color: var(--primary)
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-team-name .si-text {
+      font-size: 10px
+  }
+
+  .si-ranking-predictor .si-rankings-table-section .si-table-data.si-team {
+      width: calc(100% - 150px)
+  }
+
+  .si-ranking-predictor .si-rankings-table-wrapper {
+      background: rgba(0,0,0,0)
+  }
+
+  .si-ranking-predictor .si-table-info {
+      display: none
+  }
+
+  .si-ranking-predictor .si-table-data .si-team {
+      width: calc(100% - 160px)
+  }
+}
